@@ -1,0 +1,1062 @@
+/* .fullscreen {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: grey; /* Just to visualize the extent */
+/* height: 100vh; */
+/*     
+  }
+  .screen {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: yellow; /* Just to visualize the extent */
+/* height: 100vh; */
+
+/* }  */
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("NeueHaasDisplay-Roman.eot");
+  src: local("Neue Haas Grotesk Display Pro 55 Roman"),
+    local("NeueHaasDisplay-Roman"),
+    url("NeueHaasDisplay-Roman.eot?#iefix") format("embedded-opentype"),
+    url("NeueHaasDisplay-Roman.woff") format("woff"),
+    url("NeueHaasDisplay-Roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: mainFont;
+  src: url(../landingpage/fonts/ITC-Century-Std-Book_24537.ttf);
+  font-family: titleFont;
+  src: url(./fonts/NeueHaasDisplay-Light.ttf);
+}
+@font-face {
+  font-family: paragrapheFont;
+  src: url(./fonts/NeueHaasDisplay-XXThin.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #052c33;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-family: mainFont;
+}
+
+#header {
+  text-align: center;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  z-index: 1;
+  background-color: #ffe8e6;
+  padding: 1% 0;
+  top: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 0.8fr;
+
+  grid-template-areas:
+    "main side"
+    "footer footer";
+  /* height: 100vh;
+    width: 100%; */
+}
+
+/* CSS pour le SIDE session */
+.side {
+  background-color: #052c33;
+  grid-area: side;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side form {
+  position: relative;
+}
+
+.side > div:nth-child(2) {
+  margin-bottom: 56px;
+  color: white;
+}
+
+div.content:nth-child(1) {
+  color: white;
+}
+
+div.content:nth-child(1)
+  > div:nth-child(2)
+  > form:nth-child(1)
+  > img:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  width: 24%;
+  right: -7%;
+}
+div.content:nth-child(2)
+  > div:nth-child(2)
+  > form:nth-child(1)
+  > img:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  width: 24%;
+  right: -7%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20%;
+  text-align: center;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 1.3rem;
+}
+
+div.content:nth-child(1) > div:nth-child(1) > p:nth-child(1) {
+  margin-top: 65%;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #757575;
+  background-color: transparent;
+  padding-bottom: 15px;
+  margin-top: 50px;
+  /* background-image: url(./icone/arrow-right.svg); */
+  background-repeat: no-repeat;
+  background-size: 6em;
+  background-position: 115% 63%;
+}
+
+input::placeholder {
+  color: grey;
+  font-family: "Neue Haas Grotesk Display Pro";
+}
+
+.insta-contact {
+  margin-top: 69px;
+  font-family: mainFont;
+  font-size: 1rem;
+  
+}
+
+.insta-contact a, .insta-contact a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.i.fa {
+  color: darkslategrey;
+}
+
+.fa {
+  background-color: wheat;
+  padding: 14px;
+  border-radius: 27px;
+  width: 22px;
+  margin-top: 16px;
+}
+
+/* CSS main */
+
+.main {
+  grid-area: main;
+}
+
+/* CSS pour la première session */
+
+.first_text {
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 2rem;
+  display: flex;
+  border-top: solid 0.5px black;
+  border-bottom: solid 0.5px black;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+}
+
+#title {
+  font-size: 6.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 8px;
+}
+
+#mainTItle {
+  position: relative;
+}
+
+#scroll {
+  position: absolute;
+  top: 90%;
+  font-family: mainFont;
+}
+
+#scroll img {
+  height: 20px;
+  width: 67%;
+}
+
+.side-media {
+  display: none;
+}
+
+.first {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* background-color: hotpink; */
+  height: 100vh;
+}
+
+.first-left {
+  /* background-image: url(./picture/girlteam.png); */
+  /* background-size: cover; */
+  width: 100%;
+}
+
+.first-left img {
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.first-right {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  /* width: 50%; */
+  font-family: mainFont;
+}
+
+.first_text p {
+  margin: 1% auto;
+}
+
+#fleche {
+  margin-top: 57%;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* #scroll > img:nth-child(1) {
+    margin-top: 1%;
+   } */
+
+/* CSS pour la deuxième session */
+.two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* height: 100vh; */
+  position: relative;
+}
+.two-right {
+  height: 100vh;
+}
+.two-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20%;
+  height: 100vh;
+  font-family: "Neue Haas Grotesk Display Pro";
+}
+
+.two-left img {
+  width: 20%;
+  margin-top: 10%;
+}
+.two-left > img:nth-child(1) {
+  margin: 0;
+  position: absolute;
+  width: 60%;
+  bottom: -18%;
+  right: 20%;
+}
+
+/* .two-left > div:nth-child(2) > img:nth-child(1){
+   margin-top: 0;
+} */
+
+.two-left h2 {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.two-left p {
+  font-size: 1.3rem;
+}
+
+.two-left p:not(:nth-child(3)) {
+  margin-bottom: 10%;
+}
+
+.two-right > img:nth-child(1) {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* CSS pour la troisième session */
+.three {
+  height: 50vh;
+  background-color: #ffe8e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: mainFont;
+  font-size: 2rem;
+}
+
+.three img:nth-child(1) {
+  position: absolute;
+  width: 49%;
+  bottom: 63%;
+  right: 26%;
+}
+
+.three img {
+  width: 9%;
+}
+
+/* CSS pour la quatrième session */
+.four {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: paragrapheFont;
+  height: 100vh;
+}
+
+.four-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-right: 15%;
+  padding-left: 15%;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  font-family: "Neue Haas Grotesk Display Pro";
+}
+
+.four-right > div:nth-child(2) {
+  margin: 30px 0;
+}
+
+.four-right > div:nth-child(2) > p:nth-child(2) {
+  margin: 30px 0;
+}
+
+.four-left > img:nth-child(1) {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.four-left {
+  height: 100vh;
+}
+
+.sign {
+  font-family: mainFont;
+}
+
+.five {
+  /* height: 40vh; */
+  border-top: solid 0.5px black;
+  border-bottom: solid 0.5px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 70px;
+}
+
+.five div p {
+  font-family: mainFont;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.insta {
+  display: flex;
+
+  width: 100%;
+}
+
+.five img {
+  width: 20%;
+}
+.five img:not(:nth-child(4)) {
+  margin-right: 6.7%;
+}
+/* CSS général */
+span{
+  display: block;
+}
+/* CSS pour le FOOTER */
+
+.footer {
+  display: grid;
+  grid-area: footer;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 1px solid black;
+  padding: 50px;
+}
+
+.footer-right p {
+  width: 50%;
+  
+}
+
+.contact-icone {
+  width: 50%;
+  
+  display: flex;
+  justify-content: center;
+}
+
+.contact-icone img {
+  
+  height:100%;
+  width: max-content;
+}
+
+.contact-icone a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer form {
+  position: relative;
+}
+
+.footer-left > form:nth-child(2) > img:nth-child(1) {
+  position: absolute;
+  width: 11%;
+  bottom: 0;
+  right: -3.5%;
+}
+.footer input {
+  width: 100%;
+}
+.logo {
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+}
+
+.logo img {
+  width: 40%;
+}
+.footer h2 {
+  margin-bottom: 50px;
+}
+
+.footer-left {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.footer-left > form:nth-child(2) > input:nth-child(1) {
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: end;
+}
+
+.logo {
+  display: flex;
+}
+
+/* CSS pour smartphone -----------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "main"
+      "footer";
+    grid-template-columns: none;
+  }
+  .side {
+    display: none;
+  }
+
+  .side-media form {
+    position: relative;
+  }
+
+  .i-arrowright {
+    position: absolute;
+    width: 14%;
+    bottom: -6%;
+    right: -5%;
+  }
+
+  .header {
+    position: relative;
+    z-index: 1;
+  }
+
+  .one {
+    height: auto;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    grid-template-columns: none;
+  }
+
+  .first_text {
+    margin-top: 4%;
+  }
+
+  .first-right {
+    margin: 0;
+    height: auto;
+  }
+
+  .first-left {
+    height: 50vh;
+  }
+
+  .first-left > img:nth-child(1) {
+    height: 100%;
+  }
+
+  .mainTitle {
+    height: 100%;
+  }
+
+  #subtitle {
+    display: block;
+  }
+  #insta {
+    display: none;
+  }
+
+  .side-media {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: darkslategrey;
+    align-items: center;
+  }
+  .form {
+    width: 82%;
+  }
+  #inscription {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .side-media form input {
+    margin-top: 0;
+    border-bottom: 1px solid white;
+    /* margin-bottom: 9%; */
+  }
+  .side-media input {
+    width: 100%;
+  }
+
+  #i-insta {
+    height: 100%;
+    width: 18%;
+  } 
+
+  .i-insta {
+    width: 90%;
+  }
+
+  #i-insta a {
+    width: 90%;
+    display: block;
+  }
+
+  #paragraphe {
+    color: white;
+    font-size: 1.3rem;
+    width: 56%;
+    text-align: inherit;
+    display: none;
+    margin-bottom: 2%;
+  }
+  .double-arrow {
+    width: 3%;
+    color: white;
+  }
+
+  #scroll {
+    display: none;
+  }
+  .two {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .two-right {
+    height: 60vh;
+  }
+
+  .two-right > img:nth-child(1) {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .two-left {
+    height: auto;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+
+  .three {
+    height: 50vh;
+  }
+  .three img {
+    width: 23%;
+    /*! position: absolute; */
+    /*! top: ; */
+  }
+  .three img:nth-child(1) {
+    position: absolute;
+    width: 89%;
+    bottom: 64%;
+    right: 4%;
+  }
+
+  .three > img:nth-child(2) {
+    position: absolute;
+    top: 23%;
+  }
+
+  .three_text {
+    position: absolute;
+    bottom: 6%;
+    text-align: center;
+    width: 64%;
+  }
+
+  .four {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .four-left {
+    height: 100%;
+  }
+
+  .four-left > img:nth-child(1) {
+    /*! height: 100vh; */
+    height: 400px;
+  }
+
+  .four-right p {
+    width: auto;
+  }
+  .five {
+    height: min-content;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .five a, .five a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .five img {
+    width: 100%;
+  }
+
+  .five img:not(:nth-child(4)) {
+    margin-right: 0;
+  }
+
+  .five div p {
+    font-size: 1.5rem;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .insta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5% 3%;
+    width: 82%;
+    height: 100%;
+    margin-bottom: 60px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer h2 {
+    margin: 0;
+  }
+
+  .footer-left {
+    border-top: 1px solid black;
+    text-align: center;
+  }
+
+  .footer-left > form:nth-child(2) > input:nth-child(2) {
+    margin-top: 14%;
+  }
+
+  .footer-right {
+    border: none;
+    border-top: 1px solid black;
+    text-align: center;
+    font-family: mainFont;
+  }
+
+  .footer-right p {
+    width: auto;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact > p:nth-child(1) {
+    margin: 14% 0 4% 0;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .contact-icone {
+    justify-content: flex-end;
+  }
+
+  .contact-icone a {
+    justify-content: start;
+  }
+}
+
+/*CSS for tablet ---------------------------------------------------------------------------------*/
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "main"
+      "footer";
+    grid-template-columns: none;
+  }
+  .side {
+    display: none;
+  }
+
+  .side-media form {
+    position: relative;
+  }
+
+  .i-arrowright {
+    position: absolute;
+    width: 9%;
+    bottom: -6%;
+    right: -3%;
+  }
+
+  .header {
+    position: relative;
+    z-index: 1;
+  }
+
+  .one {
+    height: auto;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .first_text {
+    margin-top: 4%;
+  }
+
+  .first-right {
+    margin: 0;
+    height: 50%;
+  }
+
+  .first-left {
+    height: 50vh;
+  }
+
+  .first-left > img:nth-child(1) {
+    height: 100%;
+  }
+
+  .mainTitle {
+    height: 100%;
+  }
+
+  #subtitle {
+    display: block;
+  }
+  #insta {
+    display: none;
+  }
+
+  .side-media {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: darkslategrey;
+    align-items: center;
+  }
+  .form {
+    width: 82%;
+  }
+  #inscription {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+
+  .side-media form input {
+    margin-top: 0;
+    border-bottom: 1px solid white;
+    /* margin-bottom: 9%; */
+  }
+  .side-media input {
+    width: 100%;
+  }
+
+  .i-insta {
+    width: 15%;
+  }
+
+  #paragraphe {
+    color: white;
+    font-size: 1.3rem;
+    width: 56%;
+    text-align: inherit;
+    display: none;
+    margin-bottom: 2%;
+  }
+  .double-arrow {
+    width: 3%;
+    color: white;
+  }
+
+  #scroll {
+    display: none;
+  }
+  .two {
+    display: flex;
+  }
+
+  .two-left {
+    padding: 0 0%;
+    height: 100%;
+    font-family: "Neue Haas Grotesk Display Pro";
+    width: 50vw;
+  }
+
+  .two-right {
+    height: auto;
+    width: 50vw;
+  }
+
+  .two-right > img:nth-child(1) {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .two-left p {
+    font-size: 1.3rem;
+    margin: 0 18%;
+  }
+
+  .two-left > div:nth-child(3) > p:nth-child(3) {
+    margin-bottom: 10%;
+  }
+
+  .three {
+    height: 50vh;
+  }
+  .three img:nth-child(1) {
+    position: absolute;
+    width: 63%;
+    bottom: 63%;
+    right: 18%;
+  }
+  .three img {
+    width: 23%;
+  }
+  .three {
+    height: 50vh;
+    background-color: #ffe8e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: mainFont;
+    font-size: 2.2rem;
+  }
+  .three_text {
+    width: 40%;
+    text-align: center;
+   }
+   
+  .four {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .four-left > img:nth-child(1) {
+    height: 100%;
+  }
+
+  .four-left {
+    height: 100%;
+  }
+
+  .four-left > img:nth-child(1) {
+    height: 100vh;
+    height: 400px;
+  }
+  .four-right {
+    height: 100%;
+  }
+  .five {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .five img {
+    width: 200px;
+  }
+  .five img:not(:nth-child(4)) {
+    margin-right: 0;
+  }
+
+  .five div p {
+    font-size: 1.5rem;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .insta {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 12%;
+  }
+  
+  .five img {
+    width: 20%;
+  }
+
+  .five img:not(:nth-child(4)) {
+    margin-right: 3%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-left {
+    border-top: 1px solid black;
+    text-align: center;
+  }
+  .footer-right {
+    border: none;
+    border-top: 1px solid black;
+    text-align: center;
+    font-family: mainFont;
+  }
+
+  .footer-left > form:nth-child(2) > img:nth-child(1) {
+    position: absolute;
+    width: 11%;
+    bottom: 0;
+    right: -3%;
+}
+  .footer-right > div:nth-child(2) > p:nth-child(1) {
+    margin-top: 0;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .contact-icone {
+    justify-content: end;
+  }
+
+  .contact-icone a {
+    justify-content: start;
+  } */
+}
