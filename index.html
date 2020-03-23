@@ -6,7 +6,32 @@
     <title>Dioka</title>
     <link rel="stylesheet" href="landingpage.css" />
     <link rel="stylesheet" href="stylesheet.css" />
+
     <script>
+      function postToGoogle() {
+                var mail = $("#mail").val();
+                
+                	if(mail== ""){
+					alert('Please Fill Your E-mail');
+					document.getElementById("mail").focus();
+					return
+           false;
+				}
+			$.ajax({
+                    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse",
+					data: {"entry.27418147": mail},
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+					{
+					},
+					error: function(x, y, z)
+						{							$('#success-msg').show();
+							$('#form').hide();						}
+                });
+				return false;
+            }
+      // function fleche -------------------------------------------------------
       function myFunction() {
         var arrow = document.getElementsByClassName("double-arrow")[0];
         if (
@@ -83,12 +108,13 @@
                 Restez connecté.e.s avec Dioka et suivez le lancement!
               </div>
               <div id="inscription">
-                <form class="form">
-                  <img
+                <form id="form" target="_self" onSubmit="return postToGoogle();" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse" autocomplete="off" class="form">
+                  <button id="send" type="submit"><img
                     class="i-arrowright"
                     src="./landingpage/icone/arrow-right.svg"
-                  />
-                  <input type="text" name="email" placeholder="E-mail" />
+                  /></button>
+                  <input id="mail" type="text" name="entry.27418147" placeholder="E-mail" />
+                  
                 </form>
                 <div id="i-insta">
                   <a href="https://www.instagram.com/dioka_hair/"><img
