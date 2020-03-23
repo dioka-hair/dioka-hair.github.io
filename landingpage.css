@@ -215,8 +215,8 @@ input::placeholder {
 }
 
 #send {
-  background-color: darkgreen;
-  border: darkgreen;
+  background-color: #052c33;
+  border: #052c33;
  }
  
 
@@ -594,7 +594,7 @@ span{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-color: darkslategrey;
+    background-color: #052c33;
     align-items: center;
   }
   .form {
@@ -871,7 +871,7 @@ span{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-color: darkslategrey;
+    background-color: #052c33;
     align-items: center;
   }
   .form {
