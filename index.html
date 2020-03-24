@@ -87,16 +87,17 @@
 
         <div class="first">
           <div class="first-left">
+            <p class="dioka">dioka</p>
             <img src="./landingpage/picture/girlteam.png" />
           </div>
           <div class="first-right">
             <div id="mainTitle">
               <p id="title">dioka</p>
-              <h2 id="subtitle">
+              <p id="subtitle">
                 Tout ce dont<br />
                 vos cheveux ont besoin,<br />
                 réuni en un SEUL site.
-              </h2>
+              </p>
             </div>
             <div class="side-media">
               <img
@@ -145,24 +146,24 @@
           <div class="two-left">
             <div>
               <img src="./landingpage/icone/calendar.svg" />
-              <h2>Salons</h2>
-              <p>
+              <p class="two-left-title">Salons</p>
+              <p class="two-left-text">
                 Réserver des prestations auprès de salons partenaires de
                 qualité.
               </p>
             </div>
             <div>
               <img src="./landingpage/icone/products.svg" />
-              <h2>Produits</h2>
-              <p>
+              <p class="two-left-title">Produits</p>
+              <p class="two-left-text">
                 Découvrez une sélection de produits adaptés à vos besoins de
                 notre e-shop
               </p>
             </div>
             <div>
               <img src="./landingpage/icone/hautparleur.svg" />
-              <h2>Conseils</h2>
-              <p>
+              <p class="two-left-title">Conseils</p>
+              <p class="two-left-text">
                 Profitez de conseils simples et clairs pour sublimer vos
                 cheveux.
               </p>
@@ -188,7 +189,7 @@
           </div>
           <div class="four-right">
             <div class="title">
-              <h2>Une histoire de soeurs...</h2>
+              <p>Une histoire de soeurs...</p>
             </div>
             <div class="content">
               <p>
@@ -214,7 +215,7 @@
         <!-- cinquième section -->
         <div class="five">
           <div>
-            <p><a href="https://www.instagram.com/dioka_hair/">@Dioka_hair</a></p>
+            <p><a class="name-insta" href="https://www.instagram.com/dioka_hair/">@Dioka_hair</a></p>
           </div>
           <div class="insta">
             <img src="./landingpage/picture/insta1.png" alt="" />
@@ -227,33 +228,36 @@
 
       <!-- section side -->
       <div class="side">
-        <div class="content">
+        <div class="content content-up">
           <div>
             <p>Restez connecté.e.s avec Dioka et suivez le lancement!</p>
           </div>
 
-          <div>
-            <form>
-              <img src="./landingpage/icone/arrow-right.svg" />
-              <input type="text" name="email" placeholder="Mon e-mail" />
+          <div class="side-form">
+            <form  id="form" target="_self" onSubmit="return postToGoogle();" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse" autocomplete="off" class="form" >
+              <input class="side-input-mail" type="text" name="email" placeholder="Mon e-mail" />
+              <input class="side-arrow-submit" type='image' name="submit" src="landingpage/icone/arrow-right.svg"/> 
+              
             </form>
           </div>
 
           <div class="insta-contact">
             <a href="https://www.instagram.com/dioka_hair/"><p>Instagram</p>
             <p>@Dioka_hair</p>
-            <img src="./landingpage/icone/instagram.svg" alt="logo instagram" />
-          </div></a>
+            <img src="./landingpage/icone/instagram.svg" alt="logo instagram" /></a>
+          </div>
         </div>
 
-        <div class="content">
+        <div class="content content-down">
           <div>
             <p>Restez connecté.e.s avec Dioka et suivez le lancement!</p>
           </div>
-          <div>
-            <form>
-              <img src="./landingpage/icone/arrow-right.svg" />
+       
+          <div class="side-form">
+            <form  id="form" target="_self" onSubmit="return postToGoogle();" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse" autocomplete="off" class="form" >
               <input type="text" name="email" placeholder="Mon e-mail" />
+              <input class="side-arrow-submit" type='image' name="submit" src="landingpage/icone/arrow-right.svg"/> 
+              
             </form>
           </div>
           <div class="insta-contact">
@@ -265,18 +269,18 @@
       </div>
       <div class="footer">
         <div class="footer-left">
-          <h2>Newsletter</h2>
-          <form>
-            <img src="./landingpage/icone/arrow-right-green.svg" />
+          <p class="footer-title">Newsletter</p>
+          <form class="side-form">
             <input type="text" name="email" placeholder="Mon e-mail" />
+            <input class="footer-arrow-submit" type='image' name="submit" src="landingpage/icone/arrow-right-green.svg"/> 
           </form>
         </div>
         <div class="footer-right">
           <div>
-            <h2>Ecrivez-nous</h2>
+            <p class="footer-title">Ecrivez-nous</p>
           </div>
           <div class="contact">
-            <p>
+            <p class="contact-text">
               <span>Laissez-nous vos commentaires,</span> 
               <span> vos avis, vos suggestions, vos
                 idées...</span> 
@@ -284,8 +288,8 @@
               
             </p>
             <div class="logo">
-              <div class="contact-icone"><img src="./landingpage/icone/envelope.svg" /></div>
-              <div class="contact-icone"><a href="https://www.instagram.com/dioka_hair"><img src="./landingpage/icone/instagramgreen.svg" /></a></div>
+              <div class="contact-icone contact-icone-left"><img src="./landingpage/icone/envelope.svg" /></div>
+              <div class="contact-icone contact-icone-right"><a href="https://www.instagram.com/dioka_hair"><img src="./landingpage/icone/instagramgreen.svg" /></a></div>
             </div>
           </div>
         </div>
