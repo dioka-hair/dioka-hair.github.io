@@ -8,29 +8,11 @@
     <link rel="stylesheet" href="stylesheet.css" />
 
     <script>
-      function postToGoogle() {
-                var mail = $("#mail").val();
-                
-                	if(mail== ""){
-					alert('Please Fill Your E-mail');
-					document.getElementById("mail").focus();
-					return
-           false;
-				}
-			$.ajax({
-                    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse",
-					data: {"entry.27418147": mail},
-                    type: "POST",
-                    dataType: "xml",
-                    success: function(d)
-					{
-					},
-					error: function(x, y, z)
-						{							$('#success-msg').show();
-							$('#form').hide();						}
-                });
-				return false;
-            }
+          function dataSent() {
+
+alert("Vos informations en bien été envoyé !");
+
+}
       // function fleche -------------------------------------------------------
       function myFunction() {
         var arrow = document.getElementsByClassName("double-arrow")[0];
@@ -73,6 +55,11 @@
       }
     </script>
     
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  
 
     <link
       rel="stylesheet"
@@ -109,12 +96,14 @@
                 Restez connecté.e.s avec Dioka et suivez le lancement!
               </div>
               <div id="inscription">
-                <form id="form" target="_self" onSubmit="return postToGoogle();" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse" autocomplete="off" class="form">
+                <form id="form" onsubmit="dataSent()" target="hidden_iframe"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
+                autocomplete="off" class="form">
                   <button id="send" type="submit"><img
                     class="i-arrowright"
                     src="./landingpage/icone/arrow-right.svg"
                   /></button>
-                  <input id="mail" type="text" name="entry.27418147" placeholder="E-mail" />
+                  <input id="mail" type="email" name="entry.27418147" placeholder="E-mail" />
                   
                 </form>
                 <div id="i-insta">
@@ -234,8 +223,10 @@
           </div>
 
           <div class="side-form">
-            <form  id="form" target="_self" onSubmit="return postToGoogle();" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse" autocomplete="off" class="form" >
-              <input class="side-input-mail" type="text" name="email" placeholder="Mon e-mail" />
+            <form id="form" onsubmit="dataSent()" target="hidden_iframe"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
+            autocomplete="off" class="form">
+              <input class="side-input-mail" type="email" name="entry.27418147" placeholder="Mon e-mail" />
               <input class="side-arrow-submit" type='image' name="submit" src="landingpage/icone/arrow-right.svg"/> 
               
             </form>
@@ -254,8 +245,10 @@
           </div>
        
           <div class="side-form">
-            <form  id="form" target="_self" onSubmit="return postToGoogle();" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse" autocomplete="off" class="form" >
-              <input type="text" name="email" placeholder="Mon e-mail" />
+            <form id="form" onsubmit="dataSent()" target="hidden_iframe"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
+            autocomplete="off" class="form">
+              <input type="email" name="entry.27418147" placeholder="Mon e-mail" />
               <input class="side-arrow-submit" type='image' name="submit" src="landingpage/icone/arrow-right.svg"/> 
               
             </form>
@@ -270,8 +263,10 @@
       <div class="footer">
         <div class="footer-left">
           <p class="footer-title">Newsletter</p>
-          <form class="side-form">
-            <input type="text" name="email" placeholder="Mon e-mail" />
+          <form id="form" onsubmit="dataSent()" target="hidden_iframe"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
+            autocomplete="off" class="side-form">
+            <input type="email" name="entry.27418147" placeholder="Mon e-mail" />
             <input class="footer-arrow-submit" type='image' name="submit" src="landingpage/icone/arrow-right-green.svg"/> 
           </form>
         </div>
@@ -288,7 +283,7 @@
               
             </p>
             <div class="logo">
-              <div class="contact-icone contact-icone-left"><img src="./landingpage/icone/envelope.svg" /></div>
+              <div class="contact-icone contact-icone-left"><a href="mailto:contact@dioka.fr?Subject=Demande%20d'informations%20sur%20Dioka" target="_top"><img src="./landingpage/icone/envelope.svg" /></a></div>
               <div class="contact-icone contact-icone-right"><a href="https://www.instagram.com/dioka_hair"><img src="./landingpage/icone/instagramgreen.svg" /></a></div>
             </div>
           </div>
