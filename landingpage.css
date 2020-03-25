@@ -1041,7 +1041,7 @@ span{
   }
 
   .footer-left {
-    border-top: 1px solid black;
+    /*border-top: 1px solid black;*/
     text-align: center;
   }
   .footer-right {
