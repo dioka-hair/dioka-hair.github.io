@@ -189,6 +189,7 @@ input::placeholder {
   font-size: 2rem;
   display: flex;
   border-top: solid 0.5px black;
+  border-bottom: solid 0.5px black;
   justify-content: center;
   align-items: center;
   height: max-content;
