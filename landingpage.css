@@ -46,9 +46,13 @@
   src: url(./fonts/NeueHaasDisplay-XXThin.ttf);
 }
 
-body {
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   color: #052c33;
 }
 
@@ -56,19 +60,25 @@ p {
   margin: 0;
 }
 
-h2 {
+/* h2, footer p, .two-left p {
   margin: 0;
   font-family: mainFont;
-}
+  border:2px red solid;
+} */
 
 #header {
   text-align: center;
-  position: sticky;
-  position: -webkit-sticky; /* Safari */
-  z-index: 1;
-  background-color: #ffe8e6;
-  padding: 1% 0;
-  top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1;
+    background-color: #ffe8e6;
+    padding: 1% 0;
+    top: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18pt;
 }
 
 .grid {
@@ -92,45 +102,58 @@ h2 {
 }
 
 .side form {
+  display: flex;
+  /* border:red 2px solid; */
   position: relative;
+  height: 50px;
+  
 }
 
-.side > div:nth-child(2) {
-  margin-bottom: 56px;
+.side-form {
+
+  height: auto;
+  width: auto;
+  display: flex;
+  margin-top: 49px;
+
+}
+
+.side form input {
   color: white;
+  
 }
 
-div.content:nth-child(1) {
-  color: white;
+.side-arrow-submit {
+  position: absolute;
+  bottom: -13px;
+  right: -20px; 
+  width:60px;
+  border-bottom: none;
+
+}
+.content-up, .content-down {
+  margin: 0 20%;
+  color:white;
 }
 
-div.content:nth-child(1)
-  > div:nth-child(2)
-  > form:nth-child(1)
-  > img:nth-child(1) {
+/* .arrow-mail-side {
   position: absolute;
   bottom: 0;
   width: 24%;
   right: -7%;
-}
-div.content:nth-child(2)
-  > div:nth-child(2)
-  > form:nth-child(1)
-  > img:nth-child(1) {
-  position: absolute;
-  bottom: 0;
-  width: 24%;
-  right: -7%;
-}
-.content {
+} */
+
+.content  {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20%;
+  position: sticky;
   text-align: center;
   font-family: "Neue Haas Grotesk Display Pro";
   font-size: 1.3rem;
 }
+
 
 div.content:nth-child(1) > div:nth-child(1) > p:nth-child(1) {
   margin-top: 65%;
@@ -141,7 +164,7 @@ input {
   border-bottom: 1px solid #757575;
   background-color: transparent;
   padding-bottom: 15px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   /* background-image: url(./icone/arrow-right.svg); */
   background-repeat: no-repeat;
   background-size: 6em;
@@ -192,17 +215,22 @@ input::placeholder {
   border-bottom: solid 0.5px black;
   justify-content: center;
   align-items: center;
-  height: max-content;
+  height: 98px;
 }
 
 #title {
-  font-size: 6.5rem;
+  font-size:75pt;
   margin-bottom: 20px;
   letter-spacing: 8px;
+
 }
 
 #mainTItle {
   position: relative;
+}
+
+#subtitle {
+  font-size: 26pt;
 }
 
 #scroll {
@@ -237,6 +265,17 @@ input::placeholder {
   /* background-image: url(./picture/girlteam.png); */
   /* background-size: cover; */
   width: 100%;
+  position: relative;
+}
+
+.dioka {
+  position: absolute;
+  left:45px;
+  top: 85px;
+  color: white;
+  font-size: 23pt;
+  font-family: mainFont;
+  
 }
 
 .first-left img {
@@ -259,10 +298,11 @@ input::placeholder {
 
 .first_text p {
   margin: 1% auto;
+  font-size:38pt;
 }
 
 #fleche {
-  margin-top: 57%;
+  margin-top: 18px;
   animation: bounce 2s infinite;
 }
 
@@ -275,10 +315,10 @@ input::placeholder {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-30px);
+    transform: translateY(-10px);
   }
   60% {
-    transform: translateY(-15px);
+    transform: translateY(-5px);
   }
 }
 
@@ -327,8 +367,17 @@ input::placeholder {
   margin-top: 20px;
 }
 
-.two-left p {
+/* .two-left p {
   font-size: 1.3rem;
+} */
+
+.two-left-title{
+  font-size: 26pt;
+  font-family: mainFont;
+}
+
+.two-left-text {
+  font-size: 18pt;
 }
 
 .two-left p:not(:nth-child(3)) {
@@ -359,6 +408,10 @@ input::placeholder {
   width: 49%;
   bottom: 63%;
   right: 26%;
+}
+
+.three_text {
+  font-size: 40pt;
 }
 
 .three img {
@@ -423,6 +476,11 @@ input::placeholder {
   font-size: 1.5rem;
 }
 
+.name-insta, .name-insta:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 .insta {
   display: flex;
 
@@ -462,8 +520,18 @@ span{
 
 .contact-icone {
   width: 50%;
-  
+
   display: flex;
+  
+}
+
+.contact-icone-left {
+  
+  justify-content: flex-end;
+}
+
+.contact-icone-right {
+  
   justify-content: center;
 }
 
@@ -479,6 +547,10 @@ span{
   justify-content: center;
 }
 
+.contact-text {
+  margin-bottom: 0;
+}
+
 .footer form {
   position: relative;
 }
@@ -489,9 +561,9 @@ span{
   bottom: 0;
   right: -3.5%;
 }
-.footer input {
+/* .footer input {
   width: 100%;
-}
+} */
 .logo {
   width: 50%;
   height: 100%;
@@ -501,8 +573,10 @@ span{
 .logo img {
   width: 40%;
 }
-.footer h2 {
+
+.footer-title {
   margin-bottom: 50px;
+  font-size: 15pt;
 }
 
 .footer-left {
@@ -514,6 +588,15 @@ span{
 }
 .footer-left > form:nth-child(2) > input:nth-child(1) {
   width: 100%;
+}
+
+.footer-arrow-submit {
+    width: 55px;
+    border: none;
+    position: absolute;
+    bottom: -14px;
+    right: -17px;
+    
 }
 
 .contact {
@@ -789,9 +872,9 @@ span{
     align-items: center;
   }
 
-  .contact > p:nth-child(1) {
+  /* .contact > p:nth-child(1) {
     margin: 14% 0 4% 0;
-  }
+  } */
 
   .logo {
     width: 100%;
@@ -804,6 +887,10 @@ span{
   .contact-icone a {
     justify-content: start;
   }
+
+  /* .contact-text {
+    margin-bottom:0;
+  } */
 }
 
 /*CSS for tablet ---------------------------------------------------------------------------------*/
