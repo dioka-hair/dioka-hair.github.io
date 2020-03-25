@@ -330,11 +330,11 @@ input::placeholder {
 .two {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* height: 100vh; */
+  height: max-content;
   position: relative;
 }
 .two-right {
-  height: 100vh;
+  height: 100%;
 }
 .two-left {
   display: flex;
@@ -342,7 +342,7 @@ input::placeholder {
   justify-content: center;
   text-align: center;
   padding: 0 20%;
-  height: 100vh;
+  height: 100%;
   font-family: "Neue Haas Grotesk Display Pro";
 }
 
@@ -377,7 +377,7 @@ input::placeholder {
 }
 
 .two-left-text {
-  font-size: 18pt;
+  font-size: 15pt;
 }
 
 .two-left p:not(:nth-child(3)) {
@@ -385,7 +385,7 @@ input::placeholder {
 }
 
 .two-right > img:nth-child(1) {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
