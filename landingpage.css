@@ -940,7 +940,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
 }
   .footer-right {
     border: none;
-    border-top: 1px solid black;
+    border-top:none;
     text-align: center;
     font-family: mainFont;
     padding: 5% 10%;
