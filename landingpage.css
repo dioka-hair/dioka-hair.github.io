@@ -462,7 +462,7 @@ input::placeholder {
 
 div.title {
   font-family: mainFont;
-  margin-top: 135px;
+  margin-top: 48px;
   font-size: 18pt;
  }
  
@@ -508,7 +508,7 @@ div.title {
 }
 
 .five img {
-  width: inherit;
+  width: 20%;
 }
 
 .five > div:nth-child(1) {
