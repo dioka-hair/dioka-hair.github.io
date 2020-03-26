@@ -74,7 +74,7 @@ p {
     background-color: #ffe8e6;
     padding: 1% 0;
     top: 0;
-    height: 50px;
+    height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +83,7 @@ p {
 
 .grid {
   display: grid;
-  grid-template-columns: 3fr 0.8fr;
+  grid-template-columns: 3fr 1fr;
 
   grid-template-areas:
     "main side"
@@ -131,10 +131,7 @@ p {
   border-bottom: none;
 
 }
-.content-up, .content-down {
-  margin: 0 20%;
-  color:white;
-}
+
 
 /* .arrow-mail-side {
   position: absolute;
@@ -149,14 +146,16 @@ p {
   flex-direction: column;
   align-items: center;
   position: sticky;
+  top:0;
+  color:white;
   text-align: center;
   font-family: "Neue Haas Grotesk Display Pro";
-  font-size: 1.3rem;
+  font-size: 20pt;
 }
 
 
 div.content:nth-child(1) > div:nth-child(1) > p:nth-child(1) {
-  margin-top: 65%;
+  margin-top: 95%;
 }
 
 input {
@@ -230,7 +229,7 @@ input::placeholder {
 }
 
 #subtitle {
-  font-size: 26pt;
+  font-size: 24pt;
 }
 
 #scroll {
@@ -268,14 +267,18 @@ input::placeholder {
   position: relative;
 }
 
-.dioka {
+.first-left #dioka {
   position: absolute;
-  left:45px;
-  top: 85px;
-  color: white;
-  font-size: 23pt;
-  font-family: mainFont;
+  left:66px;
+  top: 66px;
   
+  width: max-content;
+  height: max-content;
+}
+
+.first-left #dioka .dioka{
+  height: 122px;
+  width: 118px;
 }
 
 .first-left img {
@@ -348,7 +351,7 @@ input::placeholder {
 
 .two-left img {
   width: 20%;
-  margin-top: 10%;
+  margin-top: 9%;
 }
 .two-left > img:nth-child(1) {
   margin: 0;
@@ -374,15 +377,19 @@ input::placeholder {
 .two-left-title{
   font-size: 26pt;
   font-family: mainFont;
+  margin: 12px 0 10px 0;
 }
+
+.two-left > div:nth-child(3) {
+  margin-bottom: 9%;
+ }
+ 
 
 .two-left-text {
   font-size: 15pt;
 }
 
-.two-left p:not(:nth-child(3)) {
-  margin-bottom: 10%;
-}
+
 
 .two-right > img:nth-child(1) {
   height: 100%;
@@ -408,14 +415,22 @@ input::placeholder {
   width: 49%;
   bottom: 63%;
   right: 26%;
-}
+} 
+
+.three > img:nth-child(2) {
+  position: absolute;
+  bottom: 198px;
+ }
+ 
 
 .three_text {
   font-size: 40pt;
+  position: absolute;
+  bottom: 46px;
 }
 
 .three img {
-  width: 9%;
+  width: 4%;
 }
 
 /* CSS pour la quatrième session */
@@ -429,22 +444,28 @@ input::placeholder {
 .four-right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
-  padding-right: 15%;
-  padding-left: 15%;
-  padding-top: 10%;
-  padding-bottom: 5%;
+  padding-right: 11%;
+  padding-left: 11%;
   font-family: "Neue Haas Grotesk Display Pro";
 }
 
 .four-right > div:nth-child(2) {
   margin: 30px 0;
+  font-size: 16pt;
 }
 
 .four-right > div:nth-child(2) > p:nth-child(2) {
   margin: 30px 0;
+
 }
+
+div.title {
+  font-family: mainFont;
+  margin-top: 135px;
+  font-size: 18pt;
+ }
+ 
 
 .four-left > img:nth-child(1) {
   height: 100vh;
@@ -458,6 +479,7 @@ input::placeholder {
 
 .sign {
   font-family: mainFont;
+  font-size: 13pt;
 }
 
 .five {
@@ -467,12 +489,10 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 70px;
 }
 
 .five div p {
   font-family: mainFont;
-  margin-bottom: 20px;
   font-size: 1.5rem;
 }
 
@@ -483,13 +503,23 @@ input::placeholder {
 
 .insta {
   display: flex;
-
+  padding: 0 118px 114px 118px;
   width: 100%;
 }
 
 .five img {
-  width: 20%;
+  width: inherit;
 }
+
+.five > div:nth-child(1) {
+  margin-top: 114px;
+ }
+
+ .five > div:nth-child(1) > p:nth-child(1) {
+  margin-bottom: 50px;
+ }
+ 
+ 
 .five img:not(:nth-child(4)) {
   margin-right: 6.7%;
 }
@@ -502,7 +532,7 @@ span{
 .footer {
   display: grid;
   grid-area: footer;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1.2fr 1.5fr;
 }
 
 .footer-right {
@@ -510,9 +540,8 @@ span{
   flex-direction: column;
   justify-content: space-between;
   border-left: 1px solid black;
-  padding: 50px;
+  padding: 114px 0 114px 118px;
 }
-
 .footer-right p {
   width: 50%;
   
@@ -549,6 +578,7 @@ span{
 
 .contact-text {
   margin-bottom: 0;
+  font-size: 13pt;
 }
 
 .footer form {
@@ -569,18 +599,16 @@ span{
   height: 100%;
   justify-content: center;
 }
-
 .logo img {
-  width: 40%;
+  width: 46%;
 }
-
 .footer-title {
   margin-bottom: 50px;
-  font-size: 15pt;
+  font-size: 18pt;
 }
 
 .footer-left {
-  padding: 50px;
+  padding: 114px 100px 114px 118px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -589,6 +617,8 @@ span{
 .footer-left > form:nth-child(2) > input:nth-child(1) {
   width: 100%;
 }
+
+
 
 .footer-arrow-submit {
     width: 55px;
@@ -610,6 +640,10 @@ span{
   display: flex;
 }
 
+div.contact-icone:nth-child(1) > a:nth-child(1) {
+  justify-content: flex-end;
+ }
+ 
 /* CSS pour smartphone -----------------------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 600px) {
@@ -635,9 +669,10 @@ span{
     right: -5%;
   }
 
-  .header {
-    position: relative;
+  #header {
     z-index: 1;
+    height: 39px;
+    font-size: 14pt;
   }
 
   .one {
@@ -658,6 +693,7 @@ span{
   .first_text p {
     margin: 1% auto;
     font-size:23pt;
+    height: 63px;
   }
 
   .first-right {
@@ -686,8 +722,22 @@ span{
   }
 
   #subtitle {
-    display: block;
+    font-size: 17pt;
   }
+
+  div.title {
+    font-family: mainFont;
+    margin-top: 94px;
+    font-size: 18pt;
+   }
+
+  #title {
+    font-size:-43pt;
+    margin-bottom: 20px;
+    letter-spacing: 8px;
+  
+  } 
+
   #insta {
     display: none;
   }
@@ -778,9 +828,7 @@ span{
     height: 50vh;
   }
   .three img {
-    width: 23%;
-    /*! position: absolute; */
-    /*! top: ; */
+    width: 16%;
   }
   .three img:nth-child(1) {
     position: absolute;
@@ -791,7 +839,7 @@ span{
 
   .three > img:nth-child(2) {
     position: absolute;
-    top: 23%;
+    top: 33%;
   }
 
   .three_text {
@@ -820,11 +868,19 @@ span{
   .four-right p {
     width: auto;
   }
+
+  .sign {
+    margin-bottom: 100px;
+  }
+
   .five {
-    height: min-content;
-    padding: 0;
+    height: max-content;
+    padding: 0 0 17% 0;
     border-bottom: none;
   }
+  .five > div:nth-child(1) {
+    margin-top: 0 
+   }
 
   .five a, .five a:visited {
     text-decoration: none;
@@ -852,12 +908,14 @@ span{
     grid-gap: 5% 3%;
     width: 82%;
     height: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 0; /*v*/
+    padding:0;
   }
 
   .footer {
     display: flex;
     flex-direction: column;
+    height: auto;
   }
   .footer h2 {
     margin: 0;
@@ -866,17 +924,26 @@ span{
   .footer-left {
     border-top: 1px solid black;
     text-align: center;
+    height: auto;
+    padding: 0;
   }
 
   .footer-left > form:nth-child(2) > input:nth-child(2) {
     margin-top: 14%;
+    padding: 5% 10%;
   }
-
+  .footer-arrow-submit {
+    width: 116px;
+    bottom: -19px;
+    right: -47px;
+    
+}
   .footer-right {
     border: none;
     border-top: 1px solid black;
     text-align: center;
     font-family: mainFont;
+    padding: 5% 10%;
   }
 
   .footer-right p {
@@ -898,6 +965,9 @@ span{
 
   .contact-icone {
     justify-content: flex-end;
+    width: 35%;
+  
+    display: flex;
   }
 
   .contact-icone a {
@@ -934,9 +1004,11 @@ span{
     right: -3%;
   }
 
-  .header {
-    position: relative;
+  #header {
+    /* position: relative; */
     z-index: 1;
+    height: 48px;
+    font-size: 18pt;
   }
 
   .one {
