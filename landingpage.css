@@ -749,6 +749,9 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
     width: 100%;
     background-color: #052c33;
     align-items: center;
+    position: sticky;
+    bottom: 0;
+    ;
   }
   .form {
     width: 82%;
@@ -925,7 +928,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
     border-top: 1px solid black;
     text-align: center;
     height: auto;
-    padding: 0;
+    padding:5% 10%;
   }
 
   .footer-left > form:nth-child(2) > input:nth-child(2) {
