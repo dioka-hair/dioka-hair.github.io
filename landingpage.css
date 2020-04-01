@@ -926,6 +926,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
 
   .footer-left {
     border-top: 1px solid black;
+    border-bottom: 1px solid black;
     text-align: center;
     height: auto;
     padding:5% 10%;
