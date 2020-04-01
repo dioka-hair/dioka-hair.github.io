@@ -878,7 +878,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
 
   .five {
     height: max-content;
-    padding: 0 0 17% 0;
+    padding: 0 0 0 0;
     border-bottom: none;
   }
   .five > div:nth-child(1) {
@@ -891,7 +891,8 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   }
 
   .five img {
-    width: 100%;
+    width: 47%;
+    margin-bottom: 6%;
   }
 
   .five img:not(:nth-child(4)) {
@@ -905,15 +906,27 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   }
 
   .insta {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 5% 3%;
+   
     width: 82%;
-    height: 100%;
+    height: auto;
     margin-bottom: 0; /*v*/
     padding:0;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  
   }
+ 
+  .insta > img:nth-child(2) {
+    margin-left: 3%;
+   }
+
+   .insta > img:nth-child(4) {
+    margin-left: 3%;
+   }
+   
+   
+   
 
   .footer {
     display: flex;
