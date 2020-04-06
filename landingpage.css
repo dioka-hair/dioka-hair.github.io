@@ -1,49 +1,22 @@
-/* .fullscreen {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: grey; /* Just to visualize the extent */
-/* height: 100vh; */
-/*     
-  }
-  .screen {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: yellow; /* Just to visualize the extent */
-/* height: 100vh; */
-
-/* }  */
-
-* {
-   box-sizing: border-box; /* Opera/IE 8+ */
-   -moz-box-sizing: border-box; /* Firefox, autres Gecko */
-   -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
-}
 
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
-  src: url("NeueHaasDisplay-Roman.eot");
-  src: local("Neue Haas Grotesk Display Pro 55 Roman"),
-    local("NeueHaasDisplay-Roman"),
-    url("NeueHaasDisplay-Roman.eot?#iefix") format("embedded-opentype"),
-    url("NeueHaasDisplay-Roman.woff") format("woff"),
-    url("NeueHaasDisplay-Roman.ttf") format("truetype");
+  src: url("fonts/NeueHaasDisplay-XXThin.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: mainFont;
-  src: url(../landingpage/fonts/ITC-Century-Std-Book_24537.ttf);
-  font-family: titleFont;
-  src: url(./fonts/NeueHaasDisplay-Light.ttf);
+  font-family: "ITC Century Std";
+  src: url("fonts/Itc-century-lt-book.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
-@font-face {
-  font-family: paragrapheFont;
-  src: url(./fonts/NeueHaasDisplay-XXThin.ttf);
+
+* {
+   box-sizing: border-box; /* Opera/IE 8+ */
+   -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+   -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
 }
 
 *{
@@ -73,12 +46,15 @@ p {
     z-index: 1;
     background-color: #ffe8e6;
     padding: 1% 0;
-    top: 0;
-    height: 44px;
+    top: 0px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18pt;
+    font-size: 24pt;
+    font-family: "Neue Haas Grotesk Display Pro";
+    opacity: 1;
+    letter-spacing: 0;
 }
 
 .grid {
@@ -99,11 +75,12 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "Neue Haas Grotesk Display Pro";
 }
 
 .side form {
   display: flex;
- 
+  
   position: relative;
   height: 50px;
   
@@ -115,10 +92,17 @@ p {
   justify-content: center;
   width: 100%;
   height: auto;
-  width: auto;
   display: flex;
   margin-top: 49px;
 
+}
+
+form#form.form {
+    display: flex;
+    position: relative;
+    height: 50px;
+    width: 207px;
+  
 }
 
 .side form input {
@@ -191,7 +175,7 @@ input::placeholder {
 
 .insta-contact {
   margin-top: 69px;
-  font-family: mainFont;
+  font-family: "ITC Century Std";
   font-size: 1rem;
   
 }
@@ -244,6 +228,8 @@ input::placeholder {
 
 #subtitle {
   font-size: 24pt;
+  font-family: "ITC Century Std";
+
 }
 
 #scroll {
@@ -360,7 +346,7 @@ input::placeholder {
   text-align: center;
   padding: 0 20%;
   height: 100%;
-  font-family: "Neue Haas Grotesk Display Pro";
+  font-family: "ITC Century Std";
 }
 
 .two-left img {
@@ -390,7 +376,7 @@ input::placeholder {
 
 .two-left-title{
   font-size: 26pt;
-  font-family: mainFont;
+  font-family: "ITC Century Std";
   margin: 12px 0 10px 0;
 }
 
@@ -401,6 +387,7 @@ input::placeholder {
 
 .two-left-text {
   font-size: 15pt;
+  font-family: "Neue Haas Grotesk Display Pro";
 }
 
 
@@ -432,8 +419,11 @@ input::placeholder {
 } 
 
 .three > img:nth-child(2) {
-  position: absolute;
-  bottom: 198px;
+  /*position: absolute;
+  bottom: 198px;*/
+  position: relative;
+  bottom: 1em;
+  width: 7%;
  }
  
 
@@ -441,6 +431,7 @@ input::placeholder {
   font-size: 40pt;
   position: absolute;
   bottom: 46px;
+  font-family: "ITC Century Std";
 }
 
 .three img {
@@ -462,6 +453,7 @@ input::placeholder {
   padding-right: 11%;
   padding-left: 11%;
   font-family: "Neue Haas Grotesk Display Pro";
+  margin: auto;
 }
 
 .four-right > div:nth-child(2) {
@@ -478,6 +470,7 @@ div.title {
   font-family: mainFont;
   margin-top: 48px;
   font-size: 18pt;
+  font-family: "ITC Century Std";
  }
  
 
@@ -492,7 +485,7 @@ div.title {
 }
 
 .sign {
-  font-family: mainFont;
+  font-family: "ITC Century Std";
   font-size: 13pt;
 }
 
@@ -555,6 +548,7 @@ span{
   justify-content: space-between;
   border-left: 1px solid black;
   padding: 12% 11%;
+  font-family: "ITC Century Std";
 }
 .footer-right p {
   width: 50%;
@@ -626,6 +620,7 @@ span{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "ITC Century Std";
   
 }
 .footer-left > form:nth-child(2) > input:nth-child(1) {
@@ -810,6 +805,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
     text-align: inherit;
     display: none;
     margin-bottom: 2%;
+    font-family: "Neue Haas Grotesk Display Pro";
   }
   .double-arrow {
     width: 3%;
@@ -855,8 +851,12 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   }
 
   .three > img:nth-child(2) {
-    position: absolute;
-    top: 33%;
+    /*position: absolute;
+    top: 33%;*/
+
+    position: relative;
+    bottom: 1em;
+    width: 15%;
   }
 
   .three_text {
@@ -975,7 +975,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
     border: none;
     border-top:none;
     text-align: center;
-    font-family: mainFont;
+    font-family: "ITC Century Std";
     padding: 5% 10%;
   }
 
@@ -1112,14 +1112,14 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   }
 
   .i-insta {
-    width: 15%;
+    /*width: 15%;*/
+    display: none;
   }
 /* 
   #i-insta {
     height: 100%;
     width: auto;
   } 
-
   #i-insta a {
     width: 90%;
     display: block;
@@ -1148,7 +1148,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   .two-left {
     padding: 0 0%;
     height: 100%;
-    font-family: "Neue Haas Grotesk Display Pro";
+    /*font-family: "Neue Haas Grotesk Display Pro";*/
     width: 50vw;
   }
 
@@ -1181,6 +1181,14 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
     bottom: 63%;
     right: 18%;
   }
+
+.three img:nth-child(2) {
+  position: relative;
+  bottom: 1em;
+  width: 15%;
+}
+
+
   .three img {
     width: 23%;
   }
@@ -1196,7 +1204,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
     font-size: 2.2rem;
   }
   .three_text {
-    width: 40%;
+    width: 70%;
     text-align: center;
    }
    
@@ -1262,12 +1270,13 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   .footer-left {
     border-top: 1px solid black;
     text-align: center;
+    font-family: "ITC Century Std";
   }
   .footer-right {
     border: none;
     border-top: 1px solid black;
     text-align: center;
-    font-family: mainFont;
+    font-family: "ITC Century Std";
   }
 
   .footer-left > form:nth-child(2) > img:nth-child(1) {
@@ -1275,6 +1284,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
     width: 11%;
     bottom: 0;
     right: -3%;
+    font-family: "ITC Century Std";
 }
   .footer-right > div:nth-child(2) > p:nth-child(1) {
     margin-top: 0;
@@ -1287,7 +1297,6 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   /* .contact-icone {
     justify-content: end;
   }
-
   .contact-icone a {
     justify-content: start;
   } */
