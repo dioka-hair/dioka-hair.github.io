@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162251592-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-162251592-1');
+    </script>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '573478753256389');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=573478753256389&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Dioka</title>
-    <link rel="stylesheet" href="landingpage.css" />
+    <link rel="stylesheet" href="landingpage2.css" />
     <link rel="stylesheet" href="stylesheet.css" />
 
     <script>
@@ -157,16 +189,11 @@ alert("Vos informations en bien été envoyé !");
             </div>
             <div class="four-content">
               <p>
-                Depuis que nous sommes petites, nos cheveux crépus nous ont fait rire et pleurer. 
-                Les mauvaises expériences chez le coiffeur ou dans la salle de bain, on connait ! 
-                Nous échangeons produits, bonnes adresses et conseils depuis des années.
+                Depuis que nous sommes petites, nos cheveux crépus nous ont fait rire et pleurer. Les mauvaises expériences chez le coiffeur ou dans la salle de bain, on connait ! Nous échangeons produits, bonnes adresses et conseils depuis des années.
               </p>
               <p>C'est ainsi qu'est née dioka, une plateforme à notre image.</p>
               <p>
-                nous souhaitons radicalement en finir avec les galères
-                capillaires. Nous voulons que toutes les femmes peu importe
-                leurs boucles, puissent accéder à des salons et des produits de
-                qualité, et ce en toute confiance.
+                Grâce à une sélection pointue et qualitative de salons et de produits, nous souhaitons en finir avec les galères capillaires. Nous voulons que toutes les femmes, peu importe leurs boucles et leurs origines, puissent accéder à la qualité et ce en toute confiance.
               </p>
             </div>
             <div class="sign">
@@ -177,7 +204,7 @@ alert("Vos informations en bien été envoyé !");
         <!-- cinquième section -->
         <div class="five">
           <div>
-            <p><a class="name-insta" href="https://www.instagram.com/dioka_hair/">@Dioka_hair</a></p>
+            <p><a class="name-insta" href="https://www.instagram.com/dioka_hair/">Suivez-nous sur @Dioka_hair</a></p>
           </div>
           <div class="insta">
             <img src="./landingpage/picture/insta1.png" alt="" />
@@ -201,7 +228,7 @@ alert("Vos informations en bien été envoyé !");
             <form id="form" onsubmit="dataSent()" target="hidden_iframe"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
             autocomplete="off" class="form">
-              <input class="side-input-mail" type="email" name="entry.27418147" placeholder="Mon e-mail" />
+              <input class="side-input-mail" type="email" name="entry.27418147" placeholder="Mon e-mail" style="outline: 0;"/>
               <input class="side-arrow-submit" type='image' name="submit" src="landingpage/icone/arrow-right.svg"/> 
               
             </form>
@@ -221,7 +248,7 @@ alert("Vos informations en bien été envoyé !");
           <form id="form" onsubmit="dataSent()" target="hidden_iframe"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
             autocomplete="off" class="side-form">
-            <input type="email" name="entry.27418147" placeholder="Mon e-mail" />
+            <input type="email" name="entry.27418147" placeholder="Mon e-mail" style="outline: 0;"/>
             <input class="footer-arrow-submit" type='image' name="submit" src="landingpage/icone/arrow-right-green.svg"/> 
           </form>
         </div>
@@ -234,7 +261,7 @@ alert("Vos informations en bien été envoyé !");
               <span>Laissez-nous vos commentaires,</span> 
               <span> vos avis, vos suggestions, vos
                 idées...</span> 
-              <span>On a hâte de vous lire!</span> 
+              <span>On a hâte de vous lire !</span> 
               
             </p>
             <div class="logo">
@@ -262,7 +289,7 @@ alert("Vos informations en bien été envoyé !");
             class="i-arrowright"
             src="./landingpage/icone/arrow-right.svg"
           /></button>
-          <input id="mail" type="email" name="entry.27418147" placeholder="E-mail" />
+          <input id="mail" type="email" name="entry.27418147" placeholder="E-mail" style="outline: 0;"/>
           
         </form>
         <div id="i-insta">
