@@ -1,14 +1,14 @@
 
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
-  src: url("fonts/NeueHaasDisplay-XXThin.ttf");
+  src: url("landingpage/fonts/NeueHaasDisplay-XXThin.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ITC Century Std";
-  src: url("fonts/Itc-century-lt-book.ttf");
+  src: url("landingpage/fonts/Itc-century-lt-book.ttf");
   font-weight: normal;
   font-style: normal;
 }
