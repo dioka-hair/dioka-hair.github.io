@@ -304,7 +304,7 @@ input::placeholder {
 
 .first_text p {
   margin: 1% auto;
-  font-size:33pt;
+  font-size:24pt;
 }
 
 #fleche {
@@ -373,9 +373,6 @@ input::placeholder {
   margin-top: 20px;
 }
 
-/* .two-left p {
-  font-size: 1.3rem;
-} */
 
 .two-left-title{
   font-size: 26pt;
@@ -706,7 +703,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
 
   .first_text p {
     margin: 1% auto;
-    font-size:23pt;
+    font-size:24pt;
     height: 63px;
   }
 
@@ -1046,7 +1043,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
     /* position: relative; */
     z-index: 1;
     height: 48px;
-    font-size: 18pt;
+    font-size: 16pt;
   }
 
   .one {
