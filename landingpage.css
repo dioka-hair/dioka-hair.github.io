@@ -417,9 +417,9 @@ input::placeholder {
 
 .three img:nth-child(1) {
   position: absolute;
-  width: 43%;
+  width: 37%;
   bottom: 63%;
-  right: 26%;
+  right: 32%;
 } 
 
 .three > img:nth-child(2) {
