@@ -115,9 +115,9 @@ form#form.form {
 
 .side-arrow-submit {
   position: absolute;
-  bottom: 7px;
-  right: -16px; 
-  width:42px;
+  bottom: -5px;
+  right: -27px; 
+  width:37%;
   border-bottom: none;
 
 }
@@ -632,11 +632,11 @@ span{
 
 
 .footer-arrow-submit {
-    width: 55px;
+    width: 19%;
     border: none;
     position: absolute;
-    bottom: -14px;
-    right: -17px;
+    bottom: -38px;
+    right: -32px;
     
 }
 
