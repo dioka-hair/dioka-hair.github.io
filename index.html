@@ -41,10 +41,9 @@
 
     <script>
           function dataSent() {
+      alert("Vos informations en bien été envoyé !");
 
-alert("Vos informations en bien été envoyé !");
-
-}
+      }
       // function fleche -------------------------------------------------------
       function myFunction() {
         var arrow = document.getElementsByClassName("double-arrow")[0];
@@ -132,7 +131,7 @@ alert("Vos informations en bien été envoyé !");
         </div>
 
         <div class="first_text">
-          <p>#lafindesgalèrescapillaires</p>
+          <div>#lafindesgalèrescapillaires</div>
         </div>
         <!-- deuxième section -->
         <div class="two">
@@ -206,14 +205,16 @@ alert("Vos informations en bien été envoyé !");
           <div>
             <p><a class="name-insta" href="https://www.instagram.com/dioka_hair/">Suivez-nous sur @Dioka_hair</a></p>
           </div>
-          <a href="https://www.instagram.com/dioka_hair/" target="_blank">
-            <div class="insta">
-              <img src="./landingpage/picture/insta1.png" alt="" />
-              <img src="./landingpage/picture/insta2.png" alt="" />
-              <img src="./landingpage/picture/insta3.png" alt="" />
-              <img src="./landingpage/picture/insta4.png" alt="" />
-            </div>
-          </a>
+          <div>
+              <a href="https://www.instagram.com/dioka_hair/" target="_blank">
+                <div class="insta">
+                  <img src="./landingpage/picture/insta1.png" alt="" />
+                  <img src="./landingpage/picture/insta2.png" alt="" />
+                  <img src="./landingpage/picture/insta3.png" alt="" />
+                  <img src="./landingpage/picture/insta4.png" alt="" />
+                </div>
+              </a>
+          </div>
         </div>
       </div>
 
@@ -250,7 +251,7 @@ alert("Vos informations en bien été envoyé !");
           <form id="form" onsubmit="dataSent()" target="hidden_iframe"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
             autocomplete="off" class="side-form">
-            <input type="email" name="entry.27418147" placeholder="Mon e-mail" style="outline: 0;"/>
+            <input class="email" type="email" name="entry.27418147" placeholder="Mon e-mail" style="outline: 0;"/>
             <input class="footer-arrow-submit" type='image' name="submit" src="landingpage/icone/arrow-right-green.svg"/> 
           </form>
         </div>
