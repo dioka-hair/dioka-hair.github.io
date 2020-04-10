@@ -209,7 +209,7 @@ input::placeholder {
 
 .first_text {
   font-family: "Neue Haas Grotesk Display Pro";
-  font-size: 2rem;
+  font-size: 1.7rem;
   display: flex;
   border-top: solid 0.5px black;
   border-bottom: solid 0.5px black;
@@ -287,6 +287,7 @@ input::placeholder {
 .first-left img {
   width: 100%;
   object-fit: cover;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -396,6 +397,7 @@ input::placeholder {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  background-size: cover;
 }
 
 /* CSS pour la troisième session */
@@ -430,7 +432,8 @@ input::placeholder {
 .three_text {
   font-size: 40pt;
   position: absolute;
-  bottom: 46px;
+  margin-bottom: 25px;
+  margin-top: 25px;
   font-family: "ITC Century Std";
 }
 
@@ -478,6 +481,7 @@ div.title {
   height: 100vh;
   width: 100%;
   object-fit: cover;
+  background-size: cover;
 }
 
 .four-left {
@@ -495,7 +499,8 @@ div.title {
   border-bottom: solid 0.5px black;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .five div p {
@@ -824,13 +829,14 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   }
 
   .two-right {
-    height: 60vh;
+    height: 95vh;
   }
 
   .two-right > img:nth-child(1) {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    background-size: cover;
   }
 
   .two-left {
@@ -840,16 +846,17 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   }
 
   .three {
-    height: 50vh;
+    height: 65vh;
   }
+
   .three img {
-    width: 16%;
+    width: 10%;
   }
   .three img:nth-child(1) {
     position: absolute;
-    width: 89%;
+    width: 80%;
     bottom: 64%;
-    right: 4%;
+    right: 10%;
   }
 
   .three > img:nth-child(2) {
@@ -894,9 +901,9 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
 
   .five {
     height: max-content;
-    padding: 0 0 0 0;
     border-bottom: none;
   }
+
   .five > div:nth-child(1) {
     margin-top: 0 
    }
@@ -907,9 +914,10 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   }
 
   .five img {
-    width: 47%;
+    width: 46%;
     margin-bottom: 6%;
     height: 100%;
+
   }
 
   .five img:not(:nth-child(4)) {
@@ -923,15 +931,17 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   }
 
   .insta {
-   
-    width: 82%;
+    width: 85%;
     height: 100%;
     margin-bottom: 0; /*v*/
     padding:0;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
  
   .insta > img:nth-child(2) {
@@ -1163,6 +1173,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    background-size: cover;
   }
 
   .two-left p {
@@ -1250,7 +1261,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   }
 
   .insta {
-    display: flex;
+    
     width: 100%;
     justify-content: center;
     margin-bottom: 12%;
@@ -1302,4 +1313,10 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   .contact-icone a {
     justify-content: start;
   } */
+}
+
+/* Modification Romelus */
+
+.email{
+  padding: 10px;
 }
