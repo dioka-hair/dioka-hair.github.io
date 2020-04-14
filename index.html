@@ -40,10 +40,11 @@
     <link rel="stylesheet" href="stylesheet.css" />
 
     <script>
-          function dataSent() {
-      alert("Vos informations en bien été envoyé !");
-
+      
+      function dataSent() {
+        alert("Vos informations en bien été envoyé !");
       }
+
       // function fleche -------------------------------------------------------
       function myFunction() {
         var arrow = document.getElementsByClassName("double-arrow")[0];
@@ -142,7 +143,7 @@
               <p class="two-left-text">
                 <span>Réservez des prestations</span> 
                  <span>auprès de salons partenaires</span>
-                 <span>de qualité.</span> 
+                 <span>de qualité</span> 
               </p>
             </div>
             <div>
@@ -160,7 +161,7 @@
               <p class="two-left-text">
                 <span>Profitez de conseils</span>
                 <span>simples et clairs</span>
-                <span>pour sublimer vos cheveux.</span> 
+                <span>pour sublimer vos cheveux</span> 
               </p>
             </div>
           </div>
@@ -185,7 +186,7 @@
           <div class="four-right">
             <div class="title">
               <p>Une histoire de soeurs...</p>
-            </div>
+            </div>@
             <div class="four-content">
               <p>
                 Depuis que nous sommes petites, nos cheveux crépus nous ont fait rire et pleurer. Les mauvaises expériences chez le coiffeur ou dans la salle de bain, on connait ! Nous échangeons produits, bonnes adresses et conseils depuis des années.
@@ -221,19 +222,20 @@
       <!-- section side -->
       <div class="side">
         <div class="content content-up">
-          <div>
-            <p><span>Restez connecté.e.s</span>
-               <span>avec Dioka et suivez </span>
-               <span>le lancement!</span></p>
+          <div class="connected">
+            <p>
+              <span>Restez connecté.e.s</span>
+              <span>avec Dioka et suivez </span>
+              <span>le lancement!</span>
+            </p>
           </div>
 
           <div class="side-form">
             <form id="form" onsubmit="dataSent()" target="hidden_iframe"
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
-            autocomplete="off" class="form">
-              <input class="side-input-mail" type="email" name="entry.27418147" placeholder="Mon e-mail" style="outline: 0;"/>
-              <input class="side-arrow-submit" type='image' name="submit" src="landingpage/icone/arrow-right.svg"/> 
-              
+              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
+              autocomplete="off" class="form">
+                <input class="side-input-mail" type="email" name="entry.27418147" placeholder="Mon e-mail" style="outline: 0;"/>
+                <input class="side-arrow-submit" type='image' name="submit" src="landingpage/icone/arrow-right.svg"/> 
             </form>
           </div>
 
@@ -242,12 +244,13 @@
             <p>@Dioka_hair</p>
             <img src="./landingpage/icone/instagram.svg" alt="logo instagram" /></a>
           </div>
-        </div>
 
+        </div>
       </div>
+
       <div class="footer">
         <div class="footer-left">
-          <p class="footer-title">Newsletter</p>
+          <div class="footer-title">Newsletter</div>
           <form id="form" onsubmit="dataSent()" target="hidden_iframe"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
             autocomplete="off" class="side-form">
@@ -256,7 +259,7 @@
           </form>
         </div>
         <div class="footer-right">
-          <p class="footer-title">Ecrivez-nous</p>
+          <div class="footer-title">Ecrivez-nous</div>
           <div class="contact">
             <p class="contact-text">
               <span>Laissez-nous vos commentaires,</span> 
