@@ -36,6 +36,11 @@ p {
   margin: 0;
 }
 
+/* h2, footer p, .two-left p {
+  margin: 0;
+  font-family: mainFont;
+  border:2px red solid;
+} */
 
 #header {
   text-align: center;
@@ -78,11 +83,8 @@ p {
 
 .side form {
   display: flex;
-  
   position: relative;
   height: 50px;
-  
-  
 }
 
 .side-form {
@@ -90,9 +92,7 @@ p {
   justify-content: center;
   width: 100%;
   height: auto;
-  display: flex;
-  margin-top: 49px;
-
+  margin-top: 60px;
 }
 
 form#form.form {
@@ -137,21 +137,24 @@ form#form.form {
 } */
 
 .content  {
-  
+  position: sticky;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: sticky;
-  top:70px;
+  font-family: "Neue Haas Grotesk Display Pro";
+  top: 10px;
   color:white;
   text-align: center;
-  font-family: "Neue Haas Grotesk Display Pro";
   font-size: 20pt;
 }
 
+.connected{
+  margin: 0;
+  padding: 0;
+}
 
 div.content:nth-child(1) > div:nth-child(1) > p:nth-child(1) {
-  margin-top: 95%;
+  margin-top: 90%;
 }
 
 input {
@@ -266,15 +269,16 @@ input::placeholder {
 }
 
 .first-left #dioka {
+  display: none !important;
   position: absolute;
   left:66px;
   top: 66px;
-  
   width: max-content;
   height: max-content;
 }
 
 .first-left #dioka .dioka{
+  display: none !important;
   height: 122px;
   width: 118px;
 }
@@ -397,12 +401,12 @@ input::placeholder {
 
 /* CSS pour la troisième session */
 .three {
-  height: 50vh;
-  background-color: #FFF0F0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 50vh;
+  background-color: #FFF0F0;
   position: relative;
   font-family: mainFont;
   font-size: 2rem;
@@ -416,13 +420,10 @@ input::placeholder {
 } 
 
 .three > img:nth-child(2) {
-  /*position: absolute;
-  bottom: 198px;*/
   position: relative;
-  bottom: 1.6em;
+  bottom: 1.7em;
   width: 4%;
- }
- 
+}
 
 .three_text {
   font-size: 40pt;
@@ -536,71 +537,20 @@ div.title {
 span{
   display: block;
 }
-
 /* CSS pour le FOOTER */
 
 .footer {
   display: grid;
   grid-area: footer;
-  grid-template-columns: 1.2fr 1.2fr;
+  grid-template-columns: 1.2fr 1.5fr;
 }
 
-.footer-title {
-  margin-bottom: 50px;
-  font-size: 18pt;
-}
-
-.footer-right {
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 12% 11%;
-  font-family: "ITC Century Std";
-  border-left: 1px solid black;
-}
-
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 12% 11%;
-  font-family: "ITC Century Std";
-}
 
 
 .footer-right p {
-  width: 50%;  
+  width: 50%;
+  
 }
-
-
-
-.footer-left > form:nth-child(2) > img:nth-child(1) {
-  position: absolute;
-  width: 11%;
-  bottom: 0;
-  right: -3.5%;
-}
-
-
-
-.footer-left > form:nth-child(2) > input:nth-child(1) {
-  width: 100%;
-}
-
-.footer form {
-  position: relative;
-}
-
-.footer-arrow-submit {
-    width: 19%;
-    border: none;
-    position: absolute;
-    bottom: -38px;
-    right: -32px; 
-}
-
-/* CSS pour le FOOTER */
 
 .contact-icone {
   width: 50%;
@@ -636,14 +586,60 @@ span{
   font-size: 13pt;
 }
 
+.footer form {
+  position: relative;
+}
+
+.footer-left > form:nth-child(2) > img:nth-child(1) {
+  position: absolute;
+  width: 11%;
+  bottom: 0;
+  right: -3.5%;
+}
 
 .logo {
   width: 50%;
   height: 100%;
   justify-content: center;
 }
+
 .logo img {
   width: 46%;
+}
+
+.footer-title {
+  margin-bottom: 50px;
+  font-size: 18pt;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "ITC Century Std";
+  padding: 90px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "ITC Century Std";
+  border-left: 1px solid black;
+  padding: 90px;
+}
+
+.footer-left > form:nth-child(2) > input:nth-child(1) {
+  width: 100%;
+}
+
+
+.footer-arrow-submit {
+    width: 19%;
+    border: none;
+    position: absolute;
+    bottom: -38px;
+    right: -32px;
 }
 
 .contact {
@@ -853,6 +849,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   .three img {
     width: 10%;
   }
+
   .three img:nth-child(1) {
     position: absolute;
     width: 80%;
@@ -861,9 +858,6 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   }
 
   .three > img:nth-child(2) {
-    /*position: absolute;
-    top: 33%;*/
-
     position: relative;
     bottom: 1em;
     width: 15%;
@@ -871,10 +865,10 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
 
   .three_text {
     position: absolute;
-    bottom: 6%;
     text-align: center;
-    width: 64%;
     font-size:inherit;
+    width: 64%;
+    bottom: 6%;
   }
 
   .four {
@@ -1191,16 +1185,17 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   }
   .three img:nth-child(1) {
     position: absolute;
-    width: 36%;
+    width: 63%;
     bottom: 63%;
-    right: 32%;
+    right: 18%;
   }
 
 .three img:nth-child(2) {
   position: relative;
-  bottom: 1.7em;
-  width: 6%;
+  bottom: 1em;
+  width: 15%;
 }
+
 
   .three img {
     width: 23%;
@@ -1306,17 +1301,10 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
     flex-direction: column;
     align-items: center;
   }
-
-  /* .contact-icone {
-    justify-content: end;
-  }
-  .contact-icone a {
-    justify-content: start;
-  } */
 }
 
 /* Modification Romelus */
 
 .email{
-  padding: 10px;
+  padding-top: 8px;
 }
