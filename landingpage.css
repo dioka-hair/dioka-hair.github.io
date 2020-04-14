@@ -421,15 +421,14 @@ input::placeholder {
 
 .three > img:nth-child(2) {
   position: relative;
-  bottom: 1.7em;
+  bottom: 1.3em;
   width: 4%;
 }
 
 .three_text {
   font-size: 40pt;
   position: absolute;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  bottom: 50px;
   font-family: "ITC Century Std";
 }
 
@@ -667,26 +666,28 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
       "footer";
     grid-template-columns: none;
   }
-  .side {
-    display: none;
-  }
 
-  .side-media form {
-    position: relative;
-  }
 
-  .i-arrowright {
-    position: absolute;
-    width: 14%;
-    bottom: -6%;
-    right: -5%;
-  }
+.side {
+  display: none;
+}
 
-  #header {
-    z-index: 1;
-    height: 39px;
-    font-size: 11pt;
-  }
+.side-media form {
+  position: relative;
+}
+
+.i-arrowright {
+  position: absolute;
+  width: 28%;
+  bottom: -6%;
+  right: -5%;
+}
+
+#header {
+  z-index: 1;
+  height: 39px;
+  font-size: 11pt;
+}
 
   .one {
     height: auto;
@@ -1306,5 +1307,5 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
 /* Modification Romelus */
 
 .email{
-  padding-top: 8px;
+  padding-top: 10px;
 }
