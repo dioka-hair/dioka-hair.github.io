@@ -36,11 +36,6 @@ p {
   margin: 0;
 }
 
-/* h2, footer p, .two-left p {
-  margin: 0;
-  font-family: mainFont;
-  border:2px red solid;
-} */
 
 #header {
   text-align: center;
@@ -424,7 +419,7 @@ input::placeholder {
   /*position: absolute;
   bottom: 198px;*/
   position: relative;
-  bottom: 1em;
+  bottom: 1.6em;
   width: 4%;
  }
  
@@ -541,26 +536,71 @@ div.title {
 span{
   display: block;
 }
+
 /* CSS pour le FOOTER */
 
 .footer {
   display: grid;
   grid-area: footer;
-  grid-template-columns: 1.2fr 1.5fr;
+  grid-template-columns: 1.2fr 1.2fr;
+}
+
+.footer-title {
+  margin-bottom: 50px;
+  font-size: 18pt;
 }
 
 .footer-right {
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 12% 11%;
+  font-family: "ITC Century Std";
   border-left: 1px solid black;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 12% 11%;
   font-family: "ITC Century Std";
 }
+
+
 .footer-right p {
-  width: 50%;
-  
+  width: 50%;  
 }
+
+
+
+.footer-left > form:nth-child(2) > img:nth-child(1) {
+  position: absolute;
+  width: 11%;
+  bottom: 0;
+  right: -3.5%;
+}
+
+
+
+.footer-left > form:nth-child(2) > input:nth-child(1) {
+  width: 100%;
+}
+
+.footer form {
+  position: relative;
+}
+
+.footer-arrow-submit {
+    width: 19%;
+    border: none;
+    position: absolute;
+    bottom: -38px;
+    right: -32px; 
+}
+
+/* CSS pour le FOOTER */
 
 .contact-icone {
   width: 50%;
@@ -596,19 +636,7 @@ span{
   font-size: 13pt;
 }
 
-.footer form {
-  position: relative;
-}
 
-.footer-left > form:nth-child(2) > img:nth-child(1) {
-  position: absolute;
-  width: 11%;
-  bottom: 0;
-  right: -3.5%;
-}
-/* .footer input {
-  width: 100%;
-} */
 .logo {
   width: 50%;
   height: 100%;
@@ -616,33 +644,6 @@ span{
 }
 .logo img {
   width: 46%;
-}
-.footer-title {
-  margin-bottom: 50px;
-  font-size: 18pt;
-}
-
-.footer-left {
-  padding: 12% 11%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: "ITC Century Std";
-  top: ;
-}
-.footer-left > form:nth-child(2) > input:nth-child(1) {
-  width: 100%;
-}
-
-
-
-.footer-arrow-submit {
-    width: 19%;
-    border: none;
-    position: absolute;
-    bottom: -38px;
-    right: -32px;
-    
 }
 
 .contact {
@@ -1190,17 +1191,16 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   }
   .three img:nth-child(1) {
     position: absolute;
-    width: 63%;
+    width: 36%;
     bottom: 63%;
-    right: 18%;
+    right: 32%;
   }
 
 .three img:nth-child(2) {
   position: relative;
-  bottom: 1em;
-  width: 15%;
+  bottom: 1.7em;
+  width: 6%;
 }
-
 
   .three img {
     width: 23%;
