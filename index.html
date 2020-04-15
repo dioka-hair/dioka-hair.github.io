@@ -313,6 +313,20 @@
        
       </div>
     </div>
-    <script src="main.js"></script>
+    <script>
+      
+      const content = document.querySelector('.content');
+
+      window.addEventListener('scroll', ()=>{
+        
+        if(window.scrollY > 2298){
+            content.classList.add('content-bottom');
+        }else{
+            content.classList.remove('content-bottom');
+        }
+
+      });
+
+    </script>
   </body>
 </html>
