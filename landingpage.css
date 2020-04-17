@@ -113,24 +113,31 @@ form#form.form {
 
 .side-arrow-submit {
   position: absolute;
-  bottom: -5px;
-  right: -27px; 
+  bottom: -0.7em;
+  right: -1em; 
   width:37%;
   border-bottom: none;
 
 }
 
 .side-input-mail {
-  padding-bottom:5px;
+  padding-bottom:0em;
   text-decoration: none;
   height: max-content;
   width: 100%;
 }
 
+input::placeholder {
+  color: grey;
+  font-size: 0.8em;
+  font-family: "Neue Haas Grotesk Display Pro";
+}
+
+/*
 .side-input-mail:focus{
   outline: none;
   
-}
+}*/
 
 /* .arrow-mail-side {
   position: absolute;
@@ -178,10 +185,7 @@ input {
   background-position: 115% 63%;
 }
 
-input::placeholder {
-  color: grey;
-  font-family: "Neue Haas Grotesk Display Pro";
-}
+
 
 .insta-contact {
   margin-top: 69px;
@@ -646,8 +650,8 @@ span{
     width: 19%;
     border: none;
     position: absolute;
-    bottom: -38px;
-    right: -32px;
+    bottom: -2.3em;
+    right: -1.6em;
 }
 
 .contact {
@@ -689,7 +693,7 @@ div.contact-icone:nth-child(1) > a:nth-child(1) {
   position: absolute;
   width: 30%;
   bottom: -6%;
-  right: -5%;
+  right: -11%;
 }
 
 #header {
