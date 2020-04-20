@@ -241,6 +241,12 @@ body {
 
 @media only screen and (max-width: 600px) {
 
+.imagephone
+{
+	display: none !important;
+}
+
+
 .zonedroite
 {
 	display: none !important;
@@ -267,4 +273,10 @@ body {
 	text-align: center;
 }
 
+.zoneemailfixe
+{
+	background-color: #052c33;
 }
+
+
+	}
