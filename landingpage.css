@@ -12,317 +12,44 @@
   font-style: normal;
 }
 
-::placeholder {
-  font-size: 1.5em;
-}
-
-* {
-   box-sizing: border-box; /* Opera/IE 8+ */
-   -moz-box-sizing: border-box; /* Firefox, autres Gecko */
-   -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  color: #052c33;
-  padding-top: 70px;;
+  color: #052C33 !important;
 }
 
-p {
-  margin: 0;
+.header
+{
+	background-color: #FFF0F0;
+	justify-content: center;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	font-family: "Neue Haas Grotesk Display Pro";
+	font-size: 1.6em;
+	padding: 0.6em;
 }
 
-/* h2, footer p, .two-left p {
-  margin: 0;
-  font-family: mainFont;
-  border:2px red solid;
-} */
-
-#header {
-  top: 0;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #FFF0F0;
-  padding: 1% 0;
-  width: 100%;
-  height: 70px;
-  font-size: 20pt;
-  font-family: "Neue Haas Grotesk Display Pro";
-  opacity: 1;
-  letter-spacing: 0;
-  z-index: 999;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-
-  grid-template-areas:
-    "main side"
-    "footer footer";
-  /* height: 100vh;
-    width: 100%; */
-}
-
-/* CSS pour le SIDE session */
-.side {
-  position: relative;
-  grid-area: side;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #052c33;
-  font-family: "Neue Haas Grotesk Display Pro";
-}
-
-.side form {
-  display: flex;
-  position: relative;
-  height: 50px;
-}
-
-.side-form {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  margin-top: 60px;
-}
-
-form#form.form {
-    display: flex;
-    position: relative;
-    height: 50px;
-    width: 207px;
-  
-}
-
-.side form input {
-  color: white;
-  
-}
-
-.side-arrow-submit {
-  position: absolute;
-  bottom: -0.7em;
-  right: -1em; 
-  width:37%;
-  border-bottom: none;
+.texteheader
+{
 
 }
 
-.side-input-mail {
-  padding-bottom:0em;
-  text-decoration: none;
-  height: max-content;
-  width: 100%;
+.phrasesousimgdioka
+{
+	font-family: "ITC Century Std";
+	font-size: 1.8em;
 }
 
-input::placeholder {
-  color: grey;
-  font-size: 0.8em;
-  font-family: "Neue Haas Grotesk Display Pro";
-}
-
-/*
-.side-input-mail:focus{
-  outline: none;
-  
-}*/
-
-/* .arrow-mail-side {
-  position: absolute;
-  bottom: 0;
-  width: 24%;
-  right: -7%;
-} */  
-
-.content {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Neue Haas Grotesk Display Pro";
-  height: 100vh;
-  color:white;
-  text-align: center;
-  font-size: 20pt;
-}
-
-.content-bottom{
-  position: absolute;
-  bottom: -43px;
-}
-
-.connected{
-  margin: 0;
-  padding: 0;
-}
-
-/* div.content:nth-child(1) > div:nth-child(1) > p:nth-child(1) {
-  margin-top: 90%;
-} */
-
-input {
-  border: none;
-  border-bottom: 1px solid #757575;
-  background-color: transparent;
-  padding-bottom: 15px;
-  /* margin-top: 50px; */
-  /* background-image: url(./icone/arrow-right.svg); */
-  background-repeat: no-repeat;
-  background-size: 6em;
-  background-position: 115% 63%;
-}
-
-
-
-.insta-contact {
-  margin-top: 69px;
-  font-family: "ITC Century Std";
-  font-size: 1rem;
-  
-}
-
-.insta-contact a, .insta-contact a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-.i.fa {
-  color: darkslategrey;
-}
-
-.fa {
-  background-color: wheat;
-  padding: 14px;
-  border-radius: 27px;
-  width: 22px;
-  margin-top: 16px;
-}
-
-/* CSS main */
-
-.main {
-  grid-area: main;
-}
-
-/* CSS pour la première session */
-
-.first_text {
-  font-family: "Neue Haas Grotesk Display Pro";
-  font-size: 1.7rem;
-  display: flex;
-  border-top: solid 0.5px black;
-  border-bottom: solid 0.5px black;
-  justify-content: center;
-  align-items: center;
-  height: 98px;
-}
-
-#title {
-  font-size:75pt;
-  margin-bottom: 20px;
-  letter-spacing: 8px;
-
-}
-
-#mainTItle {
-  position: relative;
-}
-
-#subtitle {
-  font-size: 20.3pt;
-  font-family: "ITC Century Std";
-
-}
-
-#scroll {
-  position: absolute;
-  top: 90%;
-  font-family: mainFont;
-}
-
-#scroll img {
-  height: 20px;
-  width: 67%;
-}
-
-.side-media {
-  display: none;
-}
-
-#send {
-  background-color: #052c33;
-  border: #052c33;
- }
- 
-
-.first {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* background-color: hotpink; */
-  height: 100vh;
-}
-
-.first-left {
-  /* background-image: url(./picture/girlteam.png); */
-  /* background-size: cover; */
-  width: 100%;
-  position: relative;
-}
-
-.first-left #dioka {
-  display: none !important;
-  position: absolute;
-  left:66px;
-  top: 66px;
-  width: max-content;
-  height: max-content;
-}
-
-.first-left #dioka .dioka{
-  display: none !important;
-  height: 122px;
-  width: 118px;
-}
-
-.first-left img {
-  width: 100%;
-  object-fit: cover;
-  background-size: cover;
-  height: 100vh;
-}
-
-.first-right {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  text-align: center;
-  /* width: 50%; */
-  font-family: mainFont;
-}
-
-.first_text p {
-  margin: 1% auto;
-  font-size:24pt;
+.scroll
+{
+	font-family: "ITC Century Std";
+	font-size: 1em;
 }
 
 #fleche {
-  margin-top: 18px;
-  animation: bounce 2s infinite;
+  
+  animation: bounce 1.4s infinite;
+  height: 2em;
 }
 
 @keyframes bounce {
@@ -341,168 +68,87 @@ input {
   }
 }
 
-/* #scroll > img:nth-child(1) {
-    margin-top: 1%;
-   } */
 
-/* CSS pour la deuxième session */
-.two {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: max-content;
-  position: relative;
-}
-.two-right {
-  height: 100%;
-}
-.two-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20%;
-  height: 100%;
-  font-family: "ITC Century Std";
+.phrasefindesgaleres
+{
+	font-family: "Neue Haas Grotesk Display Pro";
+	padding: 1.1em;
+	font-size: 1.6em;
+	border-top: solid 0.5px black;
+  	border-bottom: solid 0.5px black;
+  	justify-content: center;
 }
 
-.two-left img {
-  width: 20%;
-  margin-top: 9%;
-}
-.two-left > img:nth-child(1) {
-  margin: 0;
-  position: absolute;
-  width: 60%;
-  bottom: -18%;
-  right: 20%;
+.titresgirlhair
+{
+	font-family: "ITC Century Std";
+	font-size: 2.2em;
 }
 
-/* .two-left > div:nth-child(2) > img:nth-child(1){
-   margin-top: 0;
-} */
-
-.two-left h2 {
-  margin-bottom: 15px;
-  margin-top: 20px;
+.textegirlhair
+{
+	font-family: "Neue Haas Grotesk Display Pro";
+	font-size: 1.2em;
 }
 
-
-.two-left-title{
-  font-size: 26pt;
-  font-family: "ITC Century Std";
-  margin: 12px 0 10px 0;
+.girlhairimage
+{
+	padding: 0% !important;
 }
 
-.two-left > div:nth-child(3) {
-  margin-bottom: 18%;
- }
- 
-
-.two-left-text {
-  font-size: 15pt;
-  font-family: "Neue Haas Grotesk Display Pro";
+.imagephone
+{
+	position: absolute !important;
+	top: -80%;
+	left: 29%;
+	
 }
 
-
-
-.two-right > img:nth-child(1) {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  background-size: cover;
+.guillemets
+{
+	font-family: "ITC Century Std";
+	font-size: 2em;
+	position: relative;
+	top: 0.5em;
 }
 
-/* CSS pour la troisième session */
-.three {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  background-color: #FFF0F0;
-  position: relative;
-  font-family: mainFont;
-  font-size: 2rem;
+.phrasevousnaurezpluspeur
+{
+	background-color: #FFF0F0;
+	font-family: "ITC Century Std";
+	font-size: 3em;
 }
 
-.three img:nth-child(1) {
-  position: absolute;
-  width: 37%;
-  bottom: 63%;
-  right: 32%;
-} 
-
-.three > img:nth-child(2) {
-  position: relative;
-  bottom: 1.3em;
-  width: 4%;
+.unehistoiredesoeurs
+{
+	font-family: "ITC Century Std";
+	font-size: 1.6em;
+	padding: 1.6em;
 }
 
-.three_text {
-  font-size: 40pt;
-  position: absolute;
-  bottom: 50px;
-  font-family: "ITC Century Std";
+.textepresentationdioka
+{
+	font-family: "Neue Haas Grotesk Display Pro";
+	font-size: 1.4em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
-.three img {
-  width: 4%;
+.dabaetseynabou
+{
+	font-family: "ITC Century Std";
+	font-size: 1.6em;
 }
 
-/* CSS pour la quatrième session */
-.four {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  font-family: paragrapheFont;
-  height: 100vh;
+.suiveznoussur
+{
+	font-family: "ITC Century Std";
+	font-size: 2.2em;
+	padding: 1em;
 }
 
-.four-right {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-right: 11%;
-  padding-left: 11%;
-  font-family: "Neue Haas Grotesk Display Pro";
-  margin: auto;
-}
-
-.four-right > div:nth-child(2) {
-  margin: 30px 0;
-  font-size: 16pt;
-}
-
-.four-right > div:nth-child(2) > p:nth-child(2) {
-  margin: 30px 0;
-
-}
-
-div.title {
-  font-family: mainFont;
-  margin-top: 48px;
-  font-size: 18pt;
-  font-family: "ITC Century Std";
- }
- 
-
-.four-left > img:nth-child(1) {
-  height: 100vh;
-  width: 100%;
-  object-fit: cover;
-  background-size: cover;
-}
-
-.four-left {
-  height: 100vh;
-}
-
-.sign {
-  font-family: "ITC Century Std";
-  font-size: 13pt;
-}
-
-.five {
-  /* height: 40vh; */
+.images
+{
   border-top: solid 0.5px black;
   border-bottom: solid 0.5px black;
   display: flex;
@@ -511,815 +157,115 @@ div.title {
   justify-content: center;
 }
 
-.five div p {
-  font-family: mainFont;
-  font-size: 1.5rem;
+.zonedroite
+{
+	background-color: #052c33;
 }
 
-.name-insta, .name-insta:visited {
-  text-decoration: none;
-  color: inherit;
-  font-family: "ITC Century Std";
-  font-size: 26pt;
+.texte-droite
+{
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 25%;
+	z-index: 1;
+
 }
 
-.insta {
-  display: flex;
-  padding: 0 6% 5% 6%;
-  width: 100%;
+.texte-droite form input 
+{
+	color:white !important;
 }
 
-.five img {
-  width: 20%;
+.restezconnecte
+{
+	font-family: "Neue Haas Grotesk Display Pro";
+	font-size: 1.6em;
+	color: white;
 }
 
-.five > div:nth-child(1) {
-  margin-top: 8%;
- }
-
- .five > div:nth-child(1) > p:nth-child(1) {
-  margin-bottom: 50px;
- }
- 
- 
-.five img:not(:nth-child(4)) {
-  margin-right: 6.7%;
-}
-/* CSS général */
-span{
-  display: block;
-}
-/* CSS pour le FOOTER */
-
-.footer {
-  display: grid;
-  grid-area: footer;
-  grid-template-columns: 1.2fr 1.5fr;
+.emailzonedroite
+{
+	background-color: #052c33; 
+	border:none;
+	border-bottom: gray 1px solid ;
+	outline: 0;
 }
 
 
-
-.footer-right p {
-  width: 50%;
-  
+.flecheinputzonedroite
+{
+	/*position: absolute; 
+	top: 30%; 
+	right: 10%; */
+	width: 25%;
 }
 
-.contact-icone {
-  width: 50%;
-
-  display: flex;
-  
+.footer-titre
+{
+	font-family: "ITC Century Std";
+	font-size: 1.5em;
 }
 
-.contact-icone-left a {
-  
-  justify-content: flex-end;
+.footer-texte
+{
+	font-family: "ITC Century Std";
+	font-size: 1em;
 }
 
-.contact-icone-right {
-  
-  justify-content: center;
+.footer form input 
+{
+	color: black !important;
 }
 
-.contact-icone img {
-  
-  height:100%;
-  width: max-content;
+.emailfooter
+{
+	border:none;
+	border-bottom: gray 1px solid ;
+	outline: 0;
 }
 
-.contact-icone a {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.flecheinputfooter
+{
+	/*position: absolute;
+	bottom: -15%;
+	right: 37%;*/
+	width: 25%;
 }
 
-.contact-text {
-  margin-bottom: 0;
-  font-size: 13pt;
+.iconesfooter2
+{
+	display: none !important;
 }
 
-.footer form {
-  position: relative;
-}
-
-.footer-left > form:nth-child(2) > img:nth-child(1) {
-  position: absolute;
-  width: 11%;
-  bottom: 0;
-  right: -3.5%;
-}
-
-.logo {
-  width: 50%;
-  height: 100%;
-  justify-content: center;
-}
-
-.logo img {
-  width: 46%;
-}
-
-.footer-title {
-  margin-bottom: 50px;
-  font-size: 18pt;
-}
-
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: "ITC Century Std";
-  padding: 90px;
-}
-
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: "ITC Century Std";
-  border-left: 1px solid black;
-  padding: 90px;
-}
-
-.footer-left > form:nth-child(2) > input:nth-child(1) {
-  width: 100%;
-}
-
-
-.footer-arrow-submit {
-    width: 19%;
-    border: none;
-    position: absolute;
-    bottom: -2.3em;
-    right: -1.6em;
-}
-
-.contact {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: end;
-}
-
-.logo {
-  display: flex;
-}
-
-div.contact-icone:nth-child(1) > a:nth-child(1) {
-  justify-content: flex-end;
- }
- 
-/* CSS pour smartphone -----------------------------------------------------------------------------------------*/
+/* CSS pour smartphone */
 
 @media only screen and (max-width: 600px) {
-  .grid {
-    display: grid;
-    grid-template-areas:
-      "main"
-      "footer";
-    grid-template-columns: none;
-  }
 
-
-.side {
-  display: none;
+.zonedroite
+{
+	display: none !important;
 }
 
-.side-media form {
-  position: relative;
+.footer
+{
+	text-align: center;
 }
 
-.i-arrowright {
-  position: absolute;
-  width: 30%;
-  bottom: -6%;
-  right: -11%;
+.flecheinputfooter
+{
+	text-align: center;
 }
 
-#header {
-  z-index: 1;
-  height: 39px;
-  font-size: 11pt;
+.iconesfooter1
+{
+	display: none !important;
 }
 
-  .one {
-    height: auto;
-  }
-  .first {
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    grid-template-columns: none;
-    box-sizing: border-box !important;
-  }
-
-  .first_text {
-    margin-top: 4%;
-  }
-
-  .first_text p {
-    margin: 1% auto;
-    font-size:20pt;
-    height: 63px;
-  }
-
-  .first-right {
-    margin: 0;
-    height: auto;
-  }
-
-  .first-left {
-    height: 50vh;
-  }
-
-  .first-left > img:nth-child(1) {
-    height: 100%;
-  }
-
-  .first-left img {
-    height:100%
-  }
-
-  .dioka {
-    display: none;
-  }
-
-  .mainTitle {
-    height: 100%;
-  }
-
-  #subtitle {
-    font-size: 16pt;
-  }
-
-  div.title {
-    font-family: mainFont;
-    margin-top: 94px;
-    font-size: 18pt;
-   }
-
-  #title {
-    font-size:-43pt;
-    margin-bottom: 20px;
-    letter-spacing: 8px;
-  
-  } 
-
-  #insta {
-    display: none;
-  }
-
-  .side-media {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    background-color: #052c33;
-    align-items: center;
-    position: sticky;
-    bottom: 0;
-    ;
-  }
-  .form {
-    width: 82%;
-  }
-  #inscription {
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 2%;
-    margin-bottom: 2%;
-  }
-
-  .side-media form input {
-    margin-top: 0;
-    border-bottom: 1px solid white;
-    /* margin-bottom: 9%; */
-    color:white;
-  }
-  .side-media input {
-    width: 100%;
-  }
-
-  #i-insta {
-    height: 100%;
-    width: 18%;
-  } 
-
-  .i-insta {
-    width: 90%;
-  }
-
-  #i-insta a {
-    width: 90%;
-    display: block;
-  }
-
-  #paragraphe {
-    color: white;
-    font-size: 1.3rem;
-    width: 56%;
-    text-align: inherit;
-    display: none;
-    margin-bottom: 2%;
-    font-family: "Neue Haas Grotesk Display Pro";
-  }
-  .double-arrow {
-    width: 3%;
-    color: white;
-  }
-
-  #scroll {
-    display: none;
-  }
-  .two {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-
-  .two-right {
-    height: 95vh;
-  }
-
-  .two-right > img:nth-child(1) {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    background-size: cover;
-  }
-
-  .two-left {
-    height: auto;
-    margin-bottom: 10%;
-    margin-top: 10%;
-  }
-
-  .three {
-    height: 65vh;
-  }
-
-  .three img {
-    width: 10%;
-  }
-
-  .three img:nth-child(1) {
-    position: absolute;
-    width: 36%;
-    bottom: 70%;
-    right: 32%;
-  }
-
-  .three > img:nth-child(2) {
-    position: relative;
-    bottom: 1.2em;
-    width: 10%;
-  }
-
-  .three_text {
-    position: absolute;
-    text-align: center;
-    font-size:inherit;
-    width: 64%;
-    bottom: 6%;
-  }
-
-  .four {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-
-  .four-left {
-    height: 100%;
-  }
-
-  .four-left > img:nth-child(1) {
-    /*! height: 100vh; */
-    height: 400px;
-  }
-
-  .four-right p {
-    width: auto;
-  }
-
-  .sign {
-    margin-bottom: 100px;
-  }
-
-  .five {
-    height: max-content;
-    border-bottom: none;
-  }
-
-  .five > div:nth-child(1) {
-    margin-top: 0 
-   }
-
-  .five a, .five a:visited {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .five img {
-    width: 46%;
-    margin-bottom: 6%;
-    height: 100%;
-
-  }
-
-  .five img:not(:nth-child(4)) {
-    margin-right: 0;
-  }
-
-  .five div p {
-    font-size: 1.5rem;
-    margin-top: 60px;
-    margin-bottom: 40px;
-  }
-
-  .insta {
-    width: 85%;
-    height: 100%;
-    margin-bottom: 0; /*v*/
-    padding:0;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
- 
-  .insta > img:nth-child(2) {
-    margin-left: 3%;
-   }
-
-   .insta > img:nth-child(4) {
-    margin-left: 3%;
-   }
-   
-   
-   
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    margin-top: 20px;
-  }
-  .footer h2 {
-    margin: 0;
-  }
-
-  .footer-left {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    text-align: center;
-    height: auto;
-    padding:5% 10%;
-  }
-
-  .footer-left > form:nth-child(2) > input:nth-child(2) {
-    margin-top: 14%;
-    padding: 5% 10%;
-  }
-  .footer-arrow-submit {
-    width: 116px;
-    bottom: -19px;
-    right: -47px;
-    
-}
-  .footer-right {
-    border: none;
-    border-top:none;
-    text-align: center;
-    font-family: "ITC Century Std";
-    padding: 5% 10%;
-  }
-
-  .footer-right p {
-    width: auto;
-  }
-
-  .contact {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* .contact > p:nth-child(1) {
-    margin: 14% 0 4% 0;
-  } */
-
-  .logo {
-    width: 100%;
-  }
-
-  .contact-icone {
-    justify-content: flex-end;
-    width: 35%;
-  
-    display: flex;
-  }
-
-  .contact-icone a {
-    justify-content: start;
-  }
-
-  /* .contact-text {
-    margin-bottom:0;
-  } */
-}
-
-/*CSS for tablet ---------------------------------------------------------------------------------*/
-
-@media (min-width: 601px) and (max-width: 1024px) {
-  .grid {
-    display: grid;
-    grid-template-areas:
-      "main"
-      "footer";
-    grid-template-columns: none;
-  }
-  .side {
-    display: none;
-  }
-
-  .side-media form {
-    position: relative;
-  }
-
-  .i-arrowright {
-    position: absolute;
-    width: 9%;
-    bottom: -6%;
-    right: -3%;
-  }
-
-  #header {
-    /* position: relative; */
-    z-index: 1;
-    height: 48px;
-    font-size: 16pt;
-  }
-
-  .one {
-    height: auto;
-  }
-  .first {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-
-  .first_text {
-    margin-top: 4%;
-  }
-
-  .first-right {
-    margin: 0;
-    height: 50%;
-  }
-
-  .first-left {
-    height: 50vh;
-  }
-
-  .first-left > img:nth-child(1) {
-    height: 100%;
-  }
-
-  .mainTitle {
-    height: 100%;
-  }
-
-  #subtitle {
-    display: block;
-  }
-  #insta {
-    display: none;
-  }
-
-  .side-media {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    background-color: #052c33;
-    align-items: center;
-  }
-  .form {
-    width: 82%;
-  }
-  #inscription {
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 2%;
-    margin-bottom: 2%;
-  }
-
-  .side-media form input {
-    margin-top: 0;
-    border-bottom: 1px solid white;
-    /* margin-bottom: 9%; */
-    color:white;
-  }
-  .side-media input {
-    width: 100%;
-  }
-
-  .i-insta {
-    /*width: 15%;*/
-    display: none;
-  }
-/* 
-  #i-insta {
-    height: 100%;
-    width: auto;
-  } 
-  #i-insta a {
-    width: 90%;
-    display: block;
-  } */
-
-  #paragraphe {
-    color: white;
-    font-size: 1.3rem;
-    width: 56%;
-    text-align: inherit;
-    display: none;
-    margin-bottom: 2%;
-  }
-  .double-arrow {
-    width: 3%;
-    color: white;
-  }
-
-  #scroll {
-    display: none;
-  }
-  .two {
-    display: flex;
-  }
-
-  .two-left {
-    padding: 0 0%;
-    height: 100%;
-    /*font-family: "Neue Haas Grotesk Display Pro";*/
-    width: 50vw;
-  }
-
-  .two-right {
-    height: auto;
-    width: 50vw;
-  }
-
-  .two-right > img:nth-child(1) {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    background-size: cover;
-  }
-
-  .two-left p {
-    font-size: 1.3rem;
-    margin: 0 18%;
-  }
-
-  .two-left > div:nth-child(3) > p:nth-child(3) {
-    margin-bottom: 10%;
-  }
-
-  .three {
-    height: 50vh;
-  }
-  .three img:nth-child(1) {
-    position: absolute;
-    width: 38%;
-    bottom: 63%;
-    right: 31%;
-  }
-
-.three img:nth-child(2) {
-  position: relative;
-  bottom: 1.6em;
-  width: 4%;
+.iconesfooter2
+{
+	display: block !important;
+	text-align: center;
 }
 
 
-  .three img {
-    width: 23%;
-  }
-  .three {
-    height: 50vh;
-    background-color: #FFF0F0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    font-family: mainFont;
-    font-size: 2.2rem;
-  }
-  .three_text {
-    width: 100%;
-    text-align: center;
-    bottom: 0em;
-   }
-   
-  .four {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-
-  .four-left > img:nth-child(1) {
-    height: 100%;
-  }
-
-  .four-left {
-    height: 100%;
-  }
-
-  .four-left > img:nth-child(1) {
-    height: 100vh;
-    height: 400px;
-  }
-  .four-right {
-    height: 100%;
-  }
-  .five {
-    padding: 0;
-    border-bottom: none;
-  }
-
-  .five img {
-    width: 200px;
-  }
-  .five img:not(:nth-child(4)) {
-    margin-right: 0;
-  }
-
-  .five div p {
-    font-size: 1.5rem;
-    margin-top: 60px;
-    margin-bottom: 40px;
-  }
-
-  .insta {
-    
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 12%;
-  }
-  
-  .five img {
-    width: 20%;
-  }
-
-  .five img:not(:nth-child(4)) {
-    margin-right: 3%;
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-left {
-    border-top: 1px solid black;
-    text-align: center;
-    font-family: "ITC Century Std";
-  }
-  .footer-right {
-    border: none;
-    border-top: 1px solid black;
-    text-align: center;
-    font-family: "ITC Century Std";
-  }
-
-  .footer-left > form:nth-child(2) > img:nth-child(1) {
-    position: absolute;
-    width: 11%;
-    bottom: 0;
-    right: -3%;
-    font-family: "ITC Century Std";
-}
-  .footer-right > div:nth-child(2) > p:nth-child(1) {
-    margin-top: 0;
-  }
-  .contact {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-/* Modification Romelus */
-
-.email{
-  padding-top: 10px;
-}
+	}
