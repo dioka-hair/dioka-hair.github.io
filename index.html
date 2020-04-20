@@ -1,351 +1,276 @@
 <!DOCTYPE html>
-<!--<html lang="fr">-->
-<html>
-  <head>
+<html lang="fr">
+<head>
+  <title>Dioka</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="landingpage.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-    <title>Dioka</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="landingpage.css" />
-    <link rel="stylesheet" href="stylesheet.css" />
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <div class="row header">
+    Très prochainement !
+  </div>
   
+  <div class="row">
+    <div class="col-md-9 ">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./landingpage/picture/girlteam.png" width="100%"/>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="./landingpage/picture/logo-dioka.svg" width="85%"/>
+          <p class="phrasesousimgdioka">Tout ce dont <br /> vos cheveux ont besoin,<br />réuni en un SEUL site.</p>
+            <p class="scroll">Scroll</p>
+            <img id="fleche" src="https://img.icons8.com/ios/50/000000/long-arrow-down.png"/>
+            <br />
+        </div>
+      </div>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162251592-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-162251592-1');
-    </script>
-
-
-    <!-- Facebook Pixel Code -->
-    <script>
-
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '573478753256389');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=573478753256389&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
-
-
-    <script>
-
-      function dataSent() {
-        alert("Vos informations en bien été envoyé !");
-      }
-
-      // function fleche -------------------------------------------------------
-      function myFunction() {
-        var arrow = document.getElementsByClassName("double-arrow")[0];
-        if (
-          arrow.src === "https://img.icons8.com/ios/30/000000/double-up.png"
-        ) {
-          arrow.src = "https://img.icons8.com/ios/24/000000/double-down.png";
-        } else {
-          arrow.src = "https://img.icons8.com/ios/30/000000/double-up.png";
-        }
-
-        var x = document.getElementById("paragraphe");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-
-        var y = document.getElementById("subtitle");
-        if (x.style.display === "block") {
-          y.style.display = "none";
-        } else {
-          y.style.display = "block";
-        }
-
-        var z = document.getElementById("inscription");
-        if (x.style.display === "block") {
-          z.style.flexDirection = "column";
-          z.style.alignItems = "center";
-        } else {
-          z.style.flexDirection = "row";
-        }
-
-        var a = document.getElementById("tablet");
-        if (x.style.display === "none") {
-          a.style.display = "none";
-        } else {
-          a.style.display = "block";
-        }
-      }
-
-    </script>
-
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-
-  </head>
-  <body>
-    <div id="header">Très prochainement !</div>
-    <div class="grid">
-      <div class="main">
-        <!-- première section -->
-
-        <div class="first">
-          <div class="first-left">
-            <img src="./landingpage/picture/girlteam.png" />
-            <div id="dioka">
-              <img class="dioka"src="./landingpage/picture/logo-dioka.svg">
-            </div>
-          </div>
-          <div class="first-right">
-            <div id="mainTitle">
-              <div id="title"><img class="title" src="./landingpage/picture/logo-dioka-right.svg"></div>
-              <p id="subtitle">
-                Tout ce dont<br />
-                vos cheveux ont besoin,<br />
-                réuni en un SEUL site.
-              </p>
-            </div>
+      <div class="row text-center phrasefindesgaleres" width="50%">
+        #lafindesgalèrescapillaires
+      </div>
+      <div class="row">
+        <div class="col-md-6 text-center">
             
-            <div id="scroll">
-              <p>Scroll</p>
-              <img
-                id="fleche"
-                src="https://img.icons8.com/ios/50/000000/long-arrow-down.png"
-              />
+            <div class="col-md-12">
+              <br />
+              <img src="./landingpage/icone/calendar.svg" class="img-fluid" width="15%" />
             </div>
-          </div>
-        </div>
+            <div class="col-md-12 titresgirlhair">Salons</div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 textegirlhair"><br />
+                Réservez des prestations <br />
+              auprès de salons partenaires <br />
+              de qualité
+              </div>
+            </div>
+            <div class="col-md-12 titresgirlhair">
+              <br />
+              <img src="./landingpage/icone/products.svg" class="img-fluid" width="15%" />
+            </div>
+            <div class="col-md-12 titresgirlhair">Produits</div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 textegirlhair"><br />
+                Découvrez une sélection <br/>
+                de produits adaptés à vos besoins <br/>
+                dans notre e-shop
+              </div>
+            </div>
 
-        <div class="first_text">
-          <div>#lafindesgalèrescapillaires</div>
+            <div class="col-md-12 titresgirlhair">
+              <br />
+              <img src="./landingpage/icone/hautparleur.svg" class="img-fluid" width="15%" />
+            </div>
+            <div class="col-md-12 titresgirlhair">Conseils</div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 textegirlhair"><br />
+                Profitez de conseils<br/>
+                simples et clairs <br/>
+                pour sublimer vos cheveux
+                <br /><br /><br />
+              </div>
+            </div>
         </div>
-        <!-- deuxième section -->
-        <div class="two">
-          <div class="two-left">
-            <div>
-              <img src="./landingpage/icone/calendar.svg" />
-              <p class="two-left-title">Salons</p>
-              <p class="two-left-text">
-                <span>Réservez des prestations</span> 
-                 <span>auprès de salons partenaires</span>
-                 <span>de qualité</span> 
-              </p>
-            </div>
-            <div>
-              <img src="./landingpage/icone/products.svg" />
-              <p class="two-left-title">Produits</p>
-              <p class="two-left-text">
-                <span>Découvrez une sélection </span>
-                <span>de produits adaptés à vos besoins </span>
-                <span>dans notre e-shop</span>
-              </p>
-            </div>
-            <div>
-              <img src="./landingpage/icone/hautparleur.svg" />
-              <p class="two-left-title">Conseils</p>
-              <p class="two-left-text">
-                <span>Profitez de conseils</span>
-                <span>simples et clairs</span>
-                <span>pour sublimer vos cheveux</span> 
-              </p>
-            </div>
-          </div>
-          <div class="two-right">
-            <img src="./landingpage/picture/girlhair.jpeg" />
-          </div>
+      
+        <div class="col-md-6 girlhairimage">
+          <img src="./landingpage/picture/girlhair.jpeg" style="object-fit: cover; width: 100%; height: 100%;" />
         </div>
-        <!-- troisième section -->
-        <div class="three">
-          <img src="./landingpage/picture/acceuilpresta.png" />
-          <img src="./landingpage/icone/quotation.svg" />
+      </div>
 
-          <p class="three_text">
-            <span>Vous n'aurez plus peur </span> 
-            <span>d'aller chez le coiffeur</span>
+      <div class="col-md-12 text-center phrasevousnaurezpluspeur">
+        <div class="row">
+          <div class="col-md-5 d-sm-none d-md-block imagephone">
+            <img src="./landingpage/picture/acceuilpresta.png" style="width: 85%;max-height: 395; max-width: 520;"/>
+          </div>
+        </div>
+        <br />
+        <span class="guillemets">‘’</span><br />
+        Vous n'aurez plus peur <br />
+        d'aller chez le coiffeur
+        <br /><br />
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./landingpage/picture/sisters.jpg" style="object-fit: cover; width: 100%; height: 100%" />
+        </div>
+        <div class="col-md-6 text-center">
+          <p class="unehistoiredesoeurs">Une histoire de soeurs...</p>
+          <p class="textepresentationdioka">
+            Depuis que nous sommes petites, nos cheveux crépus nous ont fait rire et pleurer. Les mauvaises expériences chez le coiffeur ou dans la salle de bain, on connait ! Nous échangeons produits, bonnes adresses et conseils depuis des années.<br/><br/>
+
+            C'est ainsi qu'est né Dioka, une plateforme à notre nom et à notre image.<br/><br/>
+
+            Grâce à une sélection pointue et qualitative de salons et de produits, nous souhaitons en finir avec les galères capillaires. Nous voulons que toutes les femmes, peu importe leurs boucles et leurs origines, puissent accéder à la qualité et ce en toute confiance.<br/><br/>
           </p>
 
+          <p class="dabaetseynabou">
+            Daba et Seynabou Diokhané
+          </p>
         </div>
-        <!-- quatrième section -->
-        <div class="four">
-          <div class="four-left">
-            <img src="./landingpage/picture/sisters.jpg" />
-          </div>
-          <div class="four-right">
-
-            <div class="title">
-              <p>Une histoire de soeurs...</p>
-            </div>
-
-            <div class="four-content">
-              <p>
-                Depuis que nous sommes petites, nos cheveux crépus nous ont fait rire et pleurer. Les mauvaises expériences chez le coiffeur ou dans la salle de bain, on connait ! Nous échangeons produits, bonnes adresses et conseils depuis des années.
-              </p>
-              <p>C'est ainsi qu'est né Dioka, une plateforme à notre nom et à notre image.</p>
-              <p>
-                Grâce à une sélection pointue et qualitative de salons et de produits, nous souhaitons en finir avec les galères capillaires. Nous voulons que toutes les femmes, peu importe leurs boucles et leurs origines, puissent accéder à la qualité et ce en toute confiance.
-              </p>
-            </div>
-            <div class="sign">
-              <p>Daba et Seynabou Diokhané</p>
-            </div>
-          </div>
-        </div>
-        <!-- cinquième section -->
-        <div class="five">
-          <div>
-            <p><a class="name-insta" href="https://www.instagram.com/dioka_hair/">Suivez-nous sur @Dioka_hair</a></p>
-          </div>
-
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <a href="https://www.instagram.com/dioka_hair/" target="_blank"><img src="./landingpage/picture/insta1.png" style="width:100%; padding: 12%"></a>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <a href="https://www.instagram.com/dioka_hair/" target="_blank"><img src="./landingpage/picture/insta2.png" style="width:100%; padding: 12%"></a>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <a href="https://www.instagram.com/dioka_hair/" target="_blank"><img src="./landingpage/picture/insta3.png" style="width:100%; padding: 12%"></a>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <a href="https://www.instagram.com/dioka_hair/" target="_blank"><img src="./landingpage/picture/insta4.png" style="width:100%; padding: 12%"></a>
-    </div>
-  </div>
-          <!--
-          <div>
-              <a href="https://www.instagram.com/dioka_hair/" target="_blank">
-                <div class="insta">
-                  <img src="./landingpage/picture/insta1.png" alt="" />
-                  <img src="./landingpage/picture/insta2.png" alt="" />
-                  <img src="./landingpage/picture/insta3.png" alt="" />
-                  <img src="./landingpage/picture/insta4.png" alt="" />
-                </div>
-              </a>
-          </div>-->
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center" style="border-top: solid 0.5px black;">
+          <p class="suiveznoussur">
+            <a href="https://www.instagram.com/dioka_hair" target="_blank" style="color: #052C33;">
+              Suivez-nous sur @Dioka_hair
+            </a>
+          </p>
         </div>
       </div>
 
-      <!-- section side -->
-      <div class="side">
-        <div class="content" id="content">
-          <div class="connected">
-            <p>
-              <span>Restez connecté.e.s</span>
-              <span>avec Dioka et suivez </span>
-              <span>le lancement!</span>
-            </p>
+        <div class="row text-center">
+          <div class="col-md-3 col-sm-12">
+            <br /><br />
+            <a href="https://www.instagram.com/dioka_hair/" target="_blank">
+              <img src="./landingpage/picture/insta1.png" width="75%"/>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <a href="https://www.instagram.com/dioka_hair/" target="_blank">
+              <br /><br />
+              <img src="./landingpage/picture/insta2.png" width="75%"/>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <a href="https://www.instagram.com/dioka_hair/" target="_blank">
+              <br /><br />
+              <img src="./landingpage/picture/insta3.png" width="75%"/>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <a href="https://www.instagram.com/dioka_hair/" target="_blank">
+              <br /><br />
+              <img src="./landingpage/picture/insta4.png" width="75%"/>
+            </a>
+          </div>
+        </div>
+        <br /><br />
+    </div>
+
+    <div class="col-md-3 text-center zonedroite">
+        <div class="texte-droite"> 
+          <div class="restezconnecte">
+            Restez connecté.e.s <br />avec Dioka et suivez <br />le lancement !
+            <br /><br />
           </div>
 
-          <div class="side-form">
-            <form id="form" onsubmit="dataSent()" target="hidden_iframe"
-              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
-              autocomplete="off" class="form">
-                <input class="side-input-mail" type="email" name="entry.27418147" placeholder="Mon e-mail" style="outline: 0;"/>
-                <input class="side-arrow-submit" type='image' name="submit" src="landingpage/icone/arrow-right.svg"/> 
-            </form>
-          </div>
+          <form id="form" onsubmit="dataSent()" target="hidden_iframe"
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
+          autocomplete="off" class="form">
+            <input type="email" class="emailzonedroite" placeholder="Mon e-mail" style=""/>
+            <br />
+            <input class="flecheinputzonedroite" type='image' name="submit" src="landingpage/icone/arrow-right.svg" />
+          </form>
 
-          <div class="insta-contact">
-            <a href="https://www.instagram.com/dioka_hair/"><p>Instagram</p>
-            <p>@Dioka_hair</p>
-            <img src="./landingpage/icone/instagram.svg" alt="logo instagram" /></a>
-          </div>
+          <div>
+            <br /><br /><br /><br />
+          <a href="https://www.instagram.com/dioka_hair/" target="_blank" style="color:white;font-family: 'ITC Century Std';font-size: 1em;">
+            Instagram<br />
+            @Dioka_hair<br />
+          </a>
+          <a href="https://www.instagram.com/dioka_hair/" target="_blank">
+            <img src="./landingpage/icone/instagram.svg" alt="logo instagram" width="25%" />
+          </a>
+        </div>
 
         </div>
       </div>
+    </div>
 
-      <div class="footer">
-        <div class="footer-left">
-          <div class="footer-title">Newsletter</div>
+
+
+  <div class="row footer" style="border-top: solid 0.5px black;">
+    
+    <div class="col-md-5" style="border-right: solid 0.5px black; border-bottom: solid 0.5px black;">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <p class="footer-titre">
+            <br /> <br />
+            Newsletter
+          </p>
+          <br /><br />
           <form id="form" onsubmit="dataSent()" target="hidden_iframe"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
-            autocomplete="off" class="side-form">
-            <input class="side-input-mail" type="email" name="entry.27418147" placeholder="Mon e-mail" style="outline: 0;"/>
-            <input class="footer-arrow-submit" type='image' name="submit" src="landingpage/icone/arrow-right-green.svg"/> 
-          </form>
+            autocomplete="off" class="form">
+              <input type="email" class="emailfooter" placeholder="Mon e-mail" style=""/>
+              <br />
+              <input class="flecheinputfooter" type='image' name="submit" src="landingpage/icone/arrow-right-green.svg" />
+            </form>
+
         </div>
-        <div class="footer-right">
-          <div class="footer-title">Ecrivez-nous</div>
-          <div class="contact">
-            <p class="contact-text">
-              <span>Laissez-nous vos commentaires,</span> 
-              <span> vos avis, vos suggestions, vos
-                idées...</span> 
-              <span>On a hâte de vous lire !</span> 
-              
-            </p>
-            <div class="logo">
-              <div class="contact-icone contact-icone-left"><a href="mailto:contact@dioka.fr?Subject=Demande%20d'informations%20sur%20Dioka" target="_top"><img src="./landingpage/icone/envelope.svg" /></a></div>
-              <div class="contact-icone contact-icone-right"><a href="https://www.instagram.com/dioka_hair"><img src="./landingpage/icone/instagramgreen.svg" /></a></div>
+      </div>
+    </div>
+
+    <div class="col-md-7" style="border-bottom: solid 0.5px black;">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="footer-titre">
+                <br /> <br />
+                Ecrivez-nous
+              </p>
+            </div>
+            <div class="col-md-7">
+              <p class="footer-texte">
+                Laissez-nous vos commentaires,<br /> 
+                vos avis, vos suggestions, vos idées...<br />
+                On a hâte de vous lire !
+                <br /> <br /> <br /> <br /> 
+              </p>
+            </div>
+            <div class="col-md-5">
+                <div class="row iconesfooter1">
+                  <div class="col-md-6">
+                      <a href="mailto:contact@dioka.fr?Subject=Demande%20d'informations%20sur%20Dioka" target="_blank">
+                        <img src="./landingpage/icone/envelope.svg" />
+                      </a>
+                  </div>  
+                  <div class="col-md-6">
+                      <a href="https://www.instagram.com/dioka_hair" target="_blank">
+                        <img src="./landingpage/icone/instagramgreen.svg" />
+                      </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-12 text-center">
+              <div class="row iconesfooter2">
+                  <a href="mailto:contact@dioka.fr?Subject=Demande%20d'informations%20sur%20Dioka" target="_blank">
+                    <img src="./landingpage/icone/envelope.svg" width="20%" />
+                  </a>
+             
+                  <a href="https://www.instagram.com/dioka_hair" target="_blank">
+                    <img src="./landingpage/icone/instagramgreen.svg" width="20%" />
+                  </a>
+              </div>
+            </div>
+
+
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="side-media">
-      <img
-        class="double-arrow"
-        onClick="myFunction()"
-        src="https://img.icons8.com/ios/30/000000/double-up.png"
-      />
-      <div id="paragraphe">
-        Restez connecté.e.s avec Dioka et suivez le lancement !
-      </div>
-      <div id="inscription">
-        <form id="form" onsubmit="dataSent()" target="hidden_iframe"
-        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
-        autocomplete="off" class="form">
-          <button id="send" type="submit"><img
-            class="i-arrowright"
-            src="./landingpage/icone/arrow-right.svg"
-          /></button>
-          <input id="mail" type="email" name="entry.27418147" placeholder="Mon e-mail" style="outline: 0;"/>
-          
-        </form>
-        <div id="i-insta">
-          <a href="https://www.instagram.com/dioka_hair/"><img
-            class="i-insta"
-            src="./landingpage/icone/instagram.svg"
-            alt="logo instagram"
-          /></a>
-        </div>
-        <!-- <p id="tablet">instagram @Dioka_hair</p> -->
-       
-      </div>
-    </div>
-    <script>
-      
-      const content = document.querySelector('.content');
 
-      window.addEventListener('scroll', ()=>{
-        
-        if(window.scrollY > 2298){
-            content.classList.add('content-bottom');
-        }else{
-            content.classList.remove('content-bottom');
-        }
+      <!--
+      <form width="100%" id="form" onsubmit="dataSent()" target="hidden_iframe"
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
+          autocomplete="off" class="form">
+        <input type="email" class="emailzonedroite" placeholder="Mon e-mail" style=""/>
+        <br />
+        <input class="flecheinputzonedroite" type='image' name="submit" src="landingpage/icone/arrow-right.svg" />
+      </form>-->
 
-      });
-
-    </script>
-  </body>
+</body>
 </html>
