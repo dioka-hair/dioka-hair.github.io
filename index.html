@@ -4,48 +4,139 @@
   <title>Dioka</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="dioka.css" />
   <link rel="stylesheet" href="landingpage.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <!--alert message sent datas-->
+  <script>
+    function dataSent() 
+    {
+      alert("Vos informations en bien été envoyées !");
+    }
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162251592-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-162251592-1');
+  </script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '573478753256389');
+    fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+      <img height="1" width="1" style="display:none" alt=""
+       src="https://www.facebook.com/tr?id=573478753256389&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+ 
+  <!--arrow function-->
+  <script>
+  function myFunction() {
+    var arrow = document.getElementsByClassName("double-arrow")[0];
+    if (
+      arrow.src === "https://img.icons8.com/ios/30/000000/double-up.png"
+    ) {
+      arrow.src = "https://img.icons8.com/ios/24/000000/double-down.png";
+    } else {
+      arrow.src = "https://img.icons8.com/ios/30/000000/double-up.png";
+    }
+ 
+    var x = document.getElementById("paragraphe");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+ 
+    var y = document.getElementById("subtitle");
+    if (x.style.display === "block") {
+      y.style.display = "none";
+    } else {
+      y.style.display = "block";
+    }
+ 
+    var z = document.getElementById("inscription");
+    if (x.style.display === "block") {
+      z.style.flexDirection = "column";
+      z.style.alignItems = "center";
+    } else {
+      z.style.flexDirection = "row";
+    }
+ 
+    var a = document.getElementById("tablet");
+    if (x.style.display === "none") {
+      a.style.display = "none";
+    } else {
+      a.style.display = "block";
+    }
+  }
+  </script>
+
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
 </head>
 <body>
-
+  <!--START banner-->
   <div class="row header">
     Très prochainement !
   </div>
-  
-  <div class="row">
-    <div class="col-md-9 ">
+  <!--END banner-->
+
+  <!--START main part-->
+  <div class="container-fluid">
+  <div class="row no-gutters">
+    <div id="wrapper-whole-contents" class="col-md-9">
+      <!--START header-->      
       <div class="row">
-        <div class="col-md-6">
-          <img src="./landingpage/picture/girlteam.png" width="100%"/>
-        </div>
-        <div class="col-md-6 text-center">
-          <img src="./landingpage/picture/logo-dioka.svg" width="85%"/>
+        <div id="landing-img" class="col-md-6">
+          <img src="./landingpage/picture/girlteam+logo.png" class="girlteam_logo" alt=""/>
+          <img src="./landingpage/picture/girlteam+logo_mobile.png" class="girlteam_logo_mobile" alt=""/>
+        </div>            
+        <div id="welcome-text" class="col-md-6 text-center">
+          <img src="./landingpage/picture/logo-dioka.svg" width="85%" alt=""/>
           <p class="phrasesousimgdioka">Tout ce dont <br /> vos cheveux ont besoin,<br />réuni en un SEUL site.</p>
+          <div id="scroll">
             <p class="scroll">Scroll</p>
-            <img id="fleche" src="./landingpage/icone/dioka icones-10.svg"/>
-            <br />
+            <img id="fleche" src="./landingpage/icone/dioka icones-10.svg" alt=""/>
+          </div>          
         </div>
       </div>
+
+      <!--END header-->
 
       <div class="row text-center phrasefindesgaleres" width="50%">
         #lafindesgalèrescapillaires
       </div>
-      <div class="row">
-        <div class="col-md-6 text-center">
-            
-            <div class="col-md-12">
+
+      <!--START Dioka activities section-->
+      <div id="features" class="row">
+        <div id="features-wrapper" class="col-md-6 text-center">            
+            <div class="col-md-12 titresgirlhair">
               <br />
-              <img src="./landingpage/icone/calendar.svg" class="img-fluid" width="15%" />
+              <img src="./landingpage/icone/calendar.svg" class="img-fluid" width="15%" alt=""/>
             </div>
             <div class="col-md-12 titresgirlhair">Salons</div>
             <div class="row">
               <div class="col-md-2"></div>
-              <div class="col-md-8 textegirlhair"><br />
+              <div class="col-md-8 textegirlhair">
                 Réservez des prestations <br />
               auprès de salons partenaires <br />
               de qualité
@@ -53,12 +144,12 @@
             </div>
             <div class="col-md-12 titresgirlhair">
               <br />
-              <img src="./landingpage/icone/products.svg" class="img-fluid" width="15%" />
+              <img src="./landingpage/icone/products.svg" class="img-fluid" width="15%" alt=""/>
             </div>
             <div class="col-md-12 titresgirlhair">Produits</div>
             <div class="row">
               <div class="col-md-2"></div>
-              <div class="col-md-8 textegirlhair"><br />
+              <div class="col-md-8 textegirlhair">
                 Découvrez une sélection <br/>
                 de produits adaptés à vos besoins <br/>
                 dans notre e-shop
@@ -67,202 +158,249 @@
 
             <div class="col-md-12 titresgirlhair">
               <br />
-              <img src="./landingpage/icone/hautparleur.svg" class="img-fluid" width="15%" />
+              <img src="./landingpage/icone/hautparleur.svg" class="img-fluid" width="15%" alt=""/>
             </div>
             <div class="col-md-12 titresgirlhair">Conseils</div>
             <div class="row">
               <div class="col-md-2"></div>
-              <div class="col-md-8 textegirlhair"><br />
+              <div class="col-md-8 textegirlhair">
                 Profitez de conseils<br/>
                 simples et clairs <br/>
                 pour sublimer vos cheveux
-                <br /><br /><br />
               </div>
             </div>
         </div>
-      
-        <div class="col-md-6 girlhairimage">
-          <img src="./landingpage/picture/girlhair.jpeg" style="object-fit: cover; width: 100%; height: 100%;" />
+
+        <div id="girlhairimage" class="col-md-6">
+          <img src="./landingpage/picture/girlhair.jpeg" alt=""/>
         </div>
       </div>
+      <!--END activities section-->
 
-      <div class="col-md-12 text-center phrasevousnaurezpluspeur">
-        <div class="row">
-          <div class="col-md-5 d-sm-none d-md-block imagephone">
-            <img src="./landingpage/picture/acceuilpresta.png" style="width: 85%;max-height: 395; max-width: 520;"/>
+      <!--START slogan section-->
+      <div id="wrapper-phone-center" class="col-md-12 text-center phrasevousnaurezpluspeur">
+        <div class="imagephone">
+          <img src="./landingpage/picture/acceuilpresta.png" alt=""/>
+        </div>       
+        <div class="guillemets">
+          <img src="./landingpage/icone/quotation.svg" alt="quotation" alt="">
+        </div>
+        <div class="guillemets-text">
+          Vous n'aurez plus peur <br />
+          d'aller chez le coiffeur
+        </div>        
+      </div>
+      <!--END slogan section-->
+
+      <!--START genesis section-->
+      <div id="wrapper-presentation" class="row">
+        <div id="sisters-img" class="col-md-6">
+          <img src="./landingpage/picture/sisters.jpg" alt=""/>
+        </div>
+        <div id="presentationdioka" class="col-md-6 text-center">
+          <div class="unehistoiredesoeurs">Une histoire de sœurs...</div>
+          <div class="textepresentationdioka">                          
+              <p>
+                Depuis que nous sommes petites, nos cheveux crépus nous ont fait rire et pleurer. Les mauvaises expériences chez le coiffeur ou dans la salle de bain, on connait !<br/> Nous échangeons produits, bonnes adresses et conseils.<br/>
+                C'est ainsi qu'est né Dioka, une plateforme<br/>
+                à notre nom et à notre image.<br/>
+              </p>
+              <p>
+                Grâce à une sélection pointue et <br/>qualitative de salons et <br/> de produits, nous souhaitons en finir avec les galères capillaires. Nous voulons que toutes les femmes, peu importe leurs boucles et leurs origines, puissent accéder <br/> à la qualité et ce en toute confiance.<br/>
+              </p>   
           </div>
-        </div>
-        <br />
-        <span class="guillemets">‘’</span><br />
-        Vous n'aurez plus peur <br />
-        d'aller chez le coiffeur
-        <br /><br />
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="./landingpage/picture/sisters.jpg" style="object-fit: cover; width: 100%; height: 100%" />
-        </div>
-        <div class="col-md-6 text-center">
-          <p class="unehistoiredesoeurs">Une histoire de soeurs...</p>
-          <p class="textepresentationdioka">
-            Depuis que nous sommes petites, nos cheveux crépus nous ont fait rire et pleurer. Les mauvaises expériences chez le coiffeur ou dans la salle de bain, on connait ! Nous échangeons produits, bonnes adresses et conseils depuis des années.<br/><br/>
-
-            C'est ainsi qu'est né Dioka, une plateforme à notre nom et à notre image.<br/><br/>
-
-            Grâce à une sélection pointue et qualitative de salons et de produits, nous souhaitons en finir avec les galères capillaires. Nous voulons que toutes les femmes, peu importe leurs boucles et leurs origines, puissent accéder à la qualité et ce en toute confiance.<br/><br/>
-          </p>
-
-          <p class="dabaetseynabou">
+          <div class="dabaetseynabou">
             Daba et Seynabou Diokhané
-          </p>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 text-center" style="border-top: solid 0.5px black;">
-          <p class="suiveznoussur">
-            <a href="https://www.instagram.com/dioka_hair" target="_blank" style="color: #052C33;">
-              Suivez-nous sur @Dioka_hair
-            </a>
-          </p>
+      <!--END genesis section-->
+        
+      <!--START Instagram section-->
+        <div class="row">
+            <div class="col-md-12 text-center" style="border-top: solid 0.3px #052C33;">
+                <p class="suiveznoussur">
+                    <a href="https://www.instagram.com/dioka_hair" target="_blank" style="color: #052C33;">
+                    Suivez-nous sur @Dioka_hair
+                    </a>
+                </p>
+            </div>
         </div>
-      </div>
 
+        <!--START square pictures-->
         <div class="row text-center">
-          <div class="col-md-3 col-sm-12">
-            <br /><br />
-            <a href="https://www.instagram.com/dioka_hair/" target="_blank">
-              <img src="./landingpage/picture/insta1.png" width="75%"/>
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-12">
-            <a href="https://www.instagram.com/dioka_hair/" target="_blank">
-              <br /><br />
-              <img src="./landingpage/picture/insta2.png" width="75%"/>
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-12">
-            <a href="https://www.instagram.com/dioka_hair/" target="_blank">
-              <br /><br />
-              <img src="./landingpage/picture/insta3.png" width="75%"/>
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-12">
-            <a href="https://www.instagram.com/dioka_hair/" target="_blank">
-              <br /><br />
-              <img src="./landingpage/picture/insta4.png" width="75%"/>
-            </a>
-          </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-10 square-picture">
+                <div class="col-sm-12">
+                <a href="https://www.instagram.com/dioka_hair/" target="_blank">
+                    <img src="./landingpage/picture/insta1.png" alt="" width="100%"/>
+                </a>
+                </div>
+                <div class="col-sm-12">
+                <a href="https://www.instagram.com/dioka_hair/" target="_blank">
+                    <img src="./landingpage/picture/insta2.png" alt="" width="100%"/>
+                </a>
+                </div>
+                <div class="col-sm-12">
+                <a href="https://www.instagram.com/dioka_hair/" target="_blank">
+                    <img src="./landingpage/picture/insta3.png" alt="" width="100%"/>
+                </a>
+                </div>
+                <div class="col-sm-12">
+                <a href="https://www.instagram.com/dioka_hair/" target="_blank">
+                    <img class="insta-last-img" src="./landingpage/picture/insta4.png" alt="" width="100%"/>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
         </div>
-        <br /><br />
+        <!--END square pictures-->
+        <!--END Instagram section-->
     </div>
+    <!--END main part-->
 
-    <div class="col-md-3 text-center zonedroite">
+    <!--START aside-->
+    <div id="zonedroite" class="col-md-3 text-center zonedroite">
         <div class="texte-droite"> 
           <div class="restezconnecte">
-            Restez connecté.e.s <br />avec Dioka et suivez <br />le lancement !
-            <br /><br />
+            Restez connecté.e.s <br />avec Dioka et suivez <br />le lancement &nbsp;!
           </div>
-
           <form id="form" onsubmit="dataSent()" target="hidden_iframe"
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
           autocomplete="off" class="form">
-            <input type="email" class="emailzonedroite" placeholder="Mon e-mail" style=""/>
-            <br />
-            <input class="flecheinputzonedroite" type='image' name="submit" src="landingpage/icone/arrow-right.svg" />
+            <div class="input-box">
+              <input type="email" class="emailzonedroite" placeholder="Mon e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
+              <input class="flecheinputzonedroite" type='image' name="submit" src="landingpage/icone/arrow-right.svg" />
+            </div>            
           </form>
-
-          <div>
-            <br /><br /><br /><br />
-          <a href="https://www.instagram.com/dioka_hair/" target="_blank" style="color:white;font-family: 'ITC Century Std';font-size: 1em;">
-            Instagram<br />
-            @Dioka_hair<br />
-          </a>
-          <a href="https://www.instagram.com/dioka_hair/" target="_blank">
-            <img src="./landingpage/icone/instagram.svg" alt="logo instagram" width="25%" />
-          </a>
+          <hr class="bottom-line">          
+          <div style="margin:3vw auto 0; padding-bottom: 10em;"> 
+            <a href="https://www.instagram.com/dioka_hair/" target="_blank" style="color:white;font-family: 'ITC Century Std';font-size: 1.5vw; line-height: 1em;">
+              Instagram<br />
+              @Dioka_hair<br />
+            </a>
+            <a href="https://www.instagram.com/dioka_hair/" target="_blank">
+              <img src="./landingpage/icone/instagram.svg" alt="logo instagram" width="25%" />
+            </a>
+         </div>
         </div>
-
-        </div>
-      </div>
     </div>
+    <!--END aside-->
+    </div> <!--WARNING! DO NOT DELETE THIS DIV FOR NOT BREACK THE CODE-->
 
-
-
-  <div class="row footer" style="border-top: solid 0.5px black;">
-    
-    <div class="col-md-5" style="border-right: solid 0.5px black; border-bottom: solid 0.5px black;">
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <p class="footer-titre">
-            <br /> <br />
-            Newsletter
-          </p>
-          <br /><br />
-          <form id="form" onsubmit="dataSent()" target="hidden_iframe"
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
-            autocomplete="off" class="form">
-              <input type="email" class="emailfooter" placeholder="Mon e-mail" style=""/>
-              <br />
-              <input class="flecheinputfooter" type='image' name="submit" src="landingpage/icone/arrow-right-green.svg" />
-            </form>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-7" style="border-bottom: solid 0.5px black;">
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <div class="row">
-            <div class="col-md-12">
-              <p class="footer-titre">
-                <br /> <br />
-                Ecrivez-nous
-              </p>
-            </div>
-            <div class="col-md-7">
-              <p class="footer-texte">
-                Laissez-nous vos commentaires,<br /> 
-                vos avis, vos suggestions, vos idées...<br />
-                On a hâte de vous lire !
-                <br /> <br /> <br /> <br /> 
-              </p>
-            </div>
-            <div class="col-md-5">
-                <div class="row iconesfooter1">
-                  <div class="col-md-6">
-                      <a href="mailto:contact@dioka.fr?Subject=Demande%20d'informations%20sur%20Dioka" target="_blank">
-                        <img src="./landingpage/icone/envelope.svg" />
-                      </a>
-                  </div>  
-                  <div class="col-md-6">
-                      <a href="https://www.instagram.com/dioka_hair" target="_blank">
-                        <img src="./landingpage/icone/instagramgreen.svg" />
-                      </a>
+    <!--START footer-->
+    <div class="row footer">
+        <div class="col-md-5 instaWrapper">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p class="footer-titre">
+                    <br /> <br />
+                    Newsletter
+                    </p>
+                    <br /><br />
+                    <form id="form input-box" onsubmit="dataSent()" target="hidden_iframe"
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
+                    autocomplete="off" class="form">
+                        <input type="email" class="emailfooter" placeholder="Mon e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
+                        <input class="flecheinputfooter" type='image' name="submit" src="landingpage/icone/arrow-right-green.svg" />
+                    </form>
                 </div>
-              </div>
             </div>
-            
-            <div class="col-sm-12 text-center">
-              <div class="row iconesfooter2">
-                  <a href="mailto:contact@dioka.fr?Subject=Demande%20d'informations%20sur%20Dioka" target="_blank">
-                    <img src="./landingpage/icone/envelope.svg" width="20%" />
-                  </a>
-             
-                  <a href="https://www.instagram.com/dioka_hair" target="_blank">
-                    <img src="./landingpage/icone/instagramgreen.svg" width="20%" />
-                  </a>
-              </div>
-            </div>
-
-
-            </div>
-          </div>
         </div>
-      </div>
+    
+        <div class="col-md-7 writeUs">
+            <div class="row" style="padding-bottom: 6em;"> <!--add a padding-bottom here-->
+                <div class="col-md-1"></div> <!--before col-md-2-->
+                <div class="col-md-11">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="footer-titre">
+                                <br /> <br />
+                                Ecrivez-nous
+                            </p>
+                        </div>
+                        <div class="col-md-7 footer-texte-div">
+                            <p class="footer-texte">
+                                Laissez-nous vos commentaires,<br /> 
+                                vos avis, vos suggestions, vos idées...<br />
+                                On a hâte de vous lire !
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row-md" style="height: 1.5em;"></div>
+                            <div class="row iconesfooter1">
+                                <div class="col-md-5 offset-md-2">
+                                    <a href="mailto:contact@dioka.fr?Subject=Demande%20d'informations%20sur%20Dioka" target="_blank">
+                                        <img src="./landingpage/icone/envelope.svg" style="width:50px;"/> 
+                                    </a>
+                                </div>  
+                                <div class="col-md-5">
+                                    <a href="https://www.instagram.com/dioka_hair" target="_blank">
+                                        <img src="./landingpage/icone/instagramgreen.svg" style="width:50px;"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col-sm-12 text-center">
+                            <div class="row iconesfooter2">
+                                <a href="mailto:contact@dioka.fr?Subject=Demande%20d'informations%20sur%20Dioka" target="_blank">
+                                    <img src="./landingpage/icone/envelope.svg" width="25%" />
+                                </a>
+                            
+                                <a href="https://www.instagram.com/dioka_hair" target="_blank">
+                                    <img src="./landingpage/icone/instagramgreen.svg" width="25%" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!--END footer-->
+
+    <!--START mobile form-->
+    <div class="side-media">
+        <img
+          class="double-arrow"
+          onClick="myFunction()"
+          src="https://img.icons8.com/ios/30/000000/double-up.png"
+          alt="flêche permet d'ouvrir ou de fermer une fenêtre d'information"
+        />
+        <div id="paragraphe">
+          Restez connecté.e.s avec Dioka et suivez le lancement !
+        </div>
+        <div id="inscription">
+          <form id="s-form" onsubmit="dataSent()" target="hidden_iframe"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
+            autocomplete="off" class="s-form input-box">
+            <button id="send" type="submit">
+                <img
+                class="i-arrowright"
+                src="./landingpage/icone/arrow-right.svg"
+                alt="bouton d'envoi de votre e.mail"
+                />
+            </button>
+            <input id="s-mail" type="email" name="entry.27418147" placeholder="Mon e-mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" style="outline: 0;" required/>
+            <div id="i-insta">
+              <a href="https://www.instagram.com/dioka_hair/">
+                  <img
+                  class="i-insta"
+                  src="./landingpage/icone/instagram.svg"
+                  alt="logo instagram"
+                  />
+              </a>
+            </div>
+          </form>
+        
+        <!--<p id="tablet">instagram @Dioka_hair</p>-->
+    </div>
+    <!--END mobile form-->
+    </div>
+
+
     <!--
     <div class="row zoneemailfixe text-center">
       <div class="col-sm-12">
