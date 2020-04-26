@@ -1,3 +1,109 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+.container-fluid {
+  padding: 0 !important;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
   src: url("landingpage/fonts/NeueHaasDisplay-Roman.ttf");
@@ -7,276 +113,750 @@
 
 @font-face {
   font-family: "ITC Century Std";
-  src: url("landingpage/fonts/Itc-century-lt-book.ttf");
+  src: url("landingpage/fonts/ITC-Century-Std-Book_24537.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   color: #052C33 !important;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.header
-{
-	background-color: #FFF0F0;
-	justify-content: center;
-	position: -webkit-sticky; /* Safari */
-	position: sticky;
-	top: 0;
-	z-index: 2;
-	font-family: "Neue Haas Grotesk Display Pro";
-	font-size: 1.6em;
-	padding: 0.6em;
+.header {
+  background-color: #FFF0F0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 1.2em;
+  padding: 0.6em;
 }
 
-.texteheader
-{
-
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
-.phrasesousimgdioka
-{
-	font-family: "ITC Century Std";
-	font-size: 1.8em;
+#wrapper-whole-contents {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.scroll
-{
-	font-family: "ITC Century Std";
-	font-size: 1em;
+#landing-img {
+  padding: 0;
+  overflow: hidden;
+}
+
+#landing-img .girlteam_logo {
+  position: absolute;
+  top: -3.5em;
+  left: -2em;
+  width: 120%;
+}
+
+#landing-img .girlteam_logo_mobile {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+}
+
+#welcome-text {
+  margin-top: 5%;
+}
+
+.phrasesousimgdioka {
+  font-family: "ITC Century Std";
+  font-size: 1.4em;
+  line-height: 1.384em;
+  margin-top: -1.5em;
+}
+
+#scroll {
+  margin-top: 27%;
+  margin-bottom: 1em !important;
+}
+
+.scroll {
+  font-family: "ITC Century Std";
+  font-size: 1em;
 }
 
 #fleche {
-  
-  animation: bounce 1.4s infinite;
-  height: 2em;
+  -webkit-animation: bounce 1.4s infinite;
+          animation: bounce 1.4s infinite;
+  height: 1em;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
 }
 
 @keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
+  0%, 20%, 50%, 80%,
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   40% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   60% {
-    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
 }
 
-
-.phrasefindesgaleres
-{
-	font-family: "Neue Haas Grotesk Display Pro";
-	padding: 1.1em;
-	font-size: 1.6em;
-	border-top: solid 0.5px black;
-  	border-bottom: solid 0.5px black;
-  	justify-content: center;
+#features-wrapper {
+  padding: 3vw !important;
 }
 
-.titresgirlhair
-{
-	font-family: "ITC Century Std";
-	font-size: 2.2em;
+#features-wrapper div:nth-child(1) {
+  margin-top: -2em !important;
 }
 
-.textegirlhair
-{
-	font-family: "Neue Haas Grotesk Display Pro";
-	font-size: 1.2em;
+.phrasefindesgaleres {
+  font-family: "Neue Haas Grotesk Display Pro";
+  padding: 1.1em;
+  font-size: 1.6em;
+  border-top: solid 0.3px #052C33;
+  border-bottom: solid 0.3px #052C33;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.girlhairimage
-{
-	padding: 0% !important;
+.titresgirlhair {
+  font-family: "ITC Century Std";
+  font-size: 1.5vw;
+  padding-bottom: 0.5em;
 }
 
-.imagephone
-{
-	position: absolute !important;
-	top: -80%;
-	left: 29%;
-	
+.textegirlhair {
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 1.2vw;
+  line-height: 1.25em;
 }
 
-.guillemets
-{
-	font-family: "ITC Century Std";
-	font-size: 2em;
-	position: relative;
-	top: 0.5em;
+#girlhairimage {
+  padding: 0 !important;
+  overflow: hidden;
 }
 
-.phrasevousnaurezpluspeur
-{
-	background-color: #FFF0F0;
-	font-family: "ITC Century Std";
-	font-size: 3em;
+#girlhairimage img {
+  position: absolute;
+  left: -70%;
+  width: 250%;
+  height: auto;
 }
 
-.unehistoiredesoeurs
-{
-	font-family: "ITC Century Std";
-	font-size: 1.6em;
-	padding: 1.6em;
+.wrapper-phone-center {
+  padding-bottom: 0 !important;
 }
 
-.textepresentationdioka
-{
-	font-family: "Neue Haas Grotesk Display Pro";
-	font-size: 1.4em;
-	padding-left: 1em;
-	padding-right: 1em;
+.imagephone {
+  position: relative !important;
+  top: -23vw;
 }
 
-.dabaetseynabou
-{
-	font-family: "ITC Century Std";
-	font-size: 1.6em;
+.imagephone img {
+  width: 33%;
+  max-width: 550px;
 }
 
-.suiveznoussur
-{
-	font-family: "ITC Century Std";
-	font-size: 2.2em;
-	padding: 1em;
+.guillemets {
+  position: relative;
+  margin: -31% auto 0;
+  padding-bottom: 0.5em;
+  width: 9%;
+  max-width: 1.5em;
 }
 
-.images
-{
-  border-top: solid 0.5px black;
-  border-bottom: solid 0.5px black;
+.guillemets image {
+  width: 100%;
+}
+
+.phrasevousnaurezpluspeur {
+  background-color: #FFF0F0;
+  font-family: "ITC Century Std";
+  font-size: 3em;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-bottom: 6%;
+}
+
+#sisters-img {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+#sisters-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#presentationdioka {
+  margin: 2vw auto !important;
+}
+
+.unehistoiredesoeurs {
+  font-family: "ITC Century Std";
+  font-size: 1.5vw;
+  margin-bottom: 1vw;
+}
+
+.textepresentationdioka {
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 1.2vw;
+  line-height: 1.25em;
+  margin: auto 10%;
+}
+
+.textepresentationdioka p {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.textepresentationdioka p:nth-child(1) {
+  padding-bottom: 1vw;
+}
+
+.dabaetseynabou {
+  font-family: "ITC Century Std";
+  font-size: 1.5vw;
+  margin-top: 1vw;
+}
+
+.suiveznoussur {
+  font-family: "ITC Century Std";
+  font-size: 2vw;
+  padding: 1em;
+  margin-top: 3em;
+}
+
+.images {
+  border-width: .3px;
+  border-style: solid;
+  border-color: #052C33;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.zonedroite
-{
-	background-color: #052c33;
+#zonedroite {
+  padding: auto 0;
 }
 
-.texte-droite
-{
-	position: -webkit-sticky; /* Safari */
-	position: sticky;
-	top: 25%;
-	z-index: 1;
-
+.zonedroite {
+  background-color: #052C33;
 }
 
-.texte-droite form input 
-{
-	color:white !important;
+.texte-droite {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 25%;
+  z-index: 1;
 }
 
-.restezconnecte
-{
-	font-family: "Neue Haas Grotesk Display Pro";
-	font-size: 1.6em;
-	color: white;
+.texte-droite form input {
+  color: #FFFFFF !important;
 }
 
-.emailzonedroite
-{
-	background-color: #052c33; 
-	border:none;
-	border-bottom: gray 1px solid ;
-	outline: 0;
+.border-bottom {
+  border-bottom: 5px solid #FFFFFF;
 }
 
-
-.flecheinputzonedroite
-{
-	/*position: absolute; 
-	top: 30%; 
-	right: 10%; */
-	width: 25%;
+.restezconnecte {
+  color: #FFFFFF;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 2vw;
+  line-height: 1em;
+  margin: 6em 1vw 1em;
 }
 
-.footer-titre
-{
-	font-family: "ITC Century Std";
-	font-size: 1.5em;
+.input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
-.footer-texte
-{
-	font-family: "ITC Century Std";
-	font-size: 1em;
+.emailzonedroite {
+  background-color: #052C33;
+  border: none;
+  font-family: "Neue Haas Grotesk Display Pro";
+  width: 80%;
+  outline: 0;
 }
 
-.footer form input 
-{
-	color: black !important;
+.flecheinputzonedroite {
+  margin-right: -13.5%;
+  width: 35%;
 }
 
-.emailfooter
-{
-	border:none;
-	border-bottom: gray 1px solid ;
-	outline: 0;
+.bottom-line {
+  position: relative;
+  margin: 0 auto;
+  width: 75%;
+  border-bottom: 0.5px solid #FFFFFF;
+  -webkit-transform: translateY(-1vw);
+          transform: translateY(-1vw);
 }
 
-.flecheinputfooter
-{
-	/*position: absolute;
-	bottom: -15%;
-	right: 37%;*/
-	width: 25%;
+.instaBanner {
+  border-top: solid 0.3px #052C33;
 }
 
-.iconesfooter2
-{
-	display: none !important;
+.instaWrapper {
+  border-top: solid 0.3px #052C33;
+}
+
+.square-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+  padding-bottom: 6em;
+}
+
+.square-picture .insta-last-img {
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.square-picture > div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+}
+
+.footer-titre {
+  font-family: "ITC Century Std";
+  font-size: 1.5em;
+}
+
+.footer-texte {
+  font-family: "ITC Century Std";
+  font-size: 1.2em;
+  line-height: 1.25em;
+  margin-top: 1em;
+}
+
+.footer form input {
+  color: #000000 !important;
+}
+
+.emailfooter {
+  border: none;
+  border-bottom: 0.3px solid #052C33;
+  padding-bottom: 5%;
+  width: 23vw;
+}
+
+.flecheinputfooter {
+  left: 79%;
+  margin-top: -80px;
+  position: relative;
+  width: 80px;
+}
+
+.iconesfooter2 {
+  display: none !important;
+}
+
+.writeUs {
+  border-width: .3px;
+  border-style: solid;
+  border-color: #052C33;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.side-media {
+  display: none;
+}
+
+.side-media form {
+  position: relative;
+  margin-bottom: .5em;
 }
 
 /* CSS pour smartphone */
-
-@media only screen and (max-width: 600px) {
-
-.imagephone
-{
-	display: none !important;
+@media only screen and (max-width: 767px) {
+  #landing-img {
+    height: 100vw;
+  }
+  #landing-img .girlteam_logo {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+  }
+  #landing-img .girlteam_logo_mobile {
+    display: block;
+    position: relative;
+    top: -3em;
+    left: 0;
+    width: 110%;
+  }
+  #welcome-text {
+    margin-bottom: 2em;
+    margin-top: -1.5em;
+  }
+  #scroll {
+    display: none;
+  }
+  #features-wrapper {
+    padding: 3em !important;
+  }
+  .titresgirlhair {
+    font-size: 1.5em;
+  }
+  .titresgirlhair img {
+    width: 2.5em !important;
+  }
+  .textegirlhair {
+    font-size: 1.2em;
+    line-height: 1.25em;
+  }
+  #girlhairimage {
+    overflow: hidden;
+    width: 100vw;
+  }
+  #girlhairimage img {
+    left: -50%;
+    position: relative;
+    width: 210%;
+  }
+  .imagephone {
+    margin-bottom: -2em;
+    position: relative !important;
+    top: -210px;
+  }
+  .imagephone img {
+    max-width: 250px;
+    width: 70%;
+  }
+  .guillemets {
+    margin-top: -4.1em;
+  }
+  .guillemets-text {
+    font-size: 2rem;
+  }
+  .phrasevousnaurezpluspeur {
+    padding-bottom: 1.2em;
+  }
+  #presentationdioka {
+    padding: 0 !important;
+  }
+  #sisters-img {
+    overflow: hidden;
+    padding: 0 !important;
+  }
+  #sisters-img img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  #presentationdioka {
+    margin: 2.5em auto !important;
+  }
+  .unehistoiredesoeurs {
+    font-family: "ITC Century Std";
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  .textepresentationdioka {
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 1.2em;
+    line-height: 1.25em;
+    margin: auto 2em p;
+    margin-margin: 0 auto;
+    margin-padding: 0 auto;
+  }
+  .textepresentationdioka p:nth-child(1) {
+    padding-bottom: 1em;
+  }
+  .dabaetseynabou {
+    font-family: "ITC Century Std";
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+  .zonedroite {
+    display: none !important;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer-texte-div {
+    padding: 0 !important;
+  }
+  .flecheinputfooter {
+    text-align: center;
+  }
+  .iconesfooter1 {
+    display: none !important;
+  }
+  .iconesfooter2 {
+    display: block !important;
+    text-align: center;
+  }
+  .zoneemailfixe {
+    background-color: #052C33;
+  }
+  .square-picture {
+    margin-bottom: -2em;
+  }
+  .square-picture .col-sm-12:last-child {
+    display: none;
+  }
+  .square-picture > div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 80%;
+            flex: 0 1 80%;
+    padding: 20px;
+  }
+  .suiveznoussur {
+    font-size: 1.2em;
+    margin-top: 2em;
+    padding: 0;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer form {
+    line-height: 0;
+    margin-bottom: 0 0 0 5em;
+  }
+  .footer form input {
+    margin-bottom: 5em;
+  }
+  .emailfooter {
+    padding-bottom: 5%;
+    width: 80%;
+  }
+  .flecheinputfooter {
+    margin: -8.5em 0 0 73%;
+    position: static;
+    width: 20%;
+  }
+  .flecheinputfooterinput {
+    border: none;
+  }
+  .instaWrapper {
+    border: 0;
+    border-top: solid 0.3px #052C33;
+  }
+  .iconesfooter1 {
+    display: none !important;
+  }
+  .iconesfooter2 {
+    display: block !important;
+    text-align: center;
+  }
+  .zoneemailfixe {
+    background-color: #052C33;
+  }
+  .double-arrow {
+    color: #FFFFFF;
+    margin-top: 1rem;
+    width: 3%;
+  }
+  .double-arrow:hover {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .s-mail input {
+    background-image: url(./icone/arrow-right.svg);
+    background-position: 115% 63%;
+    background-repeat: no-repeat;
+    background-size: 6em;
+    border: none;
+    border-bottom: 1px solid #757575;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    padding-bottom: 15px;
+    margin-top: 50px;
+  }
+  .footer form input {
+    color: grey !important;
+  }
+  .s-mail input:focus {
+    outline: 0;
+  }
+  .s-mail input::-webkit-input-placeholder {
+    color: grey;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-size: .8em;
+  }
+  .s-mail input:-ms-input-placeholder {
+    color: grey;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-size: .8em;
+  }
+  .s-mail input::-ms-input-placeholder {
+    color: grey;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-size: .8em;
+  }
+  .s-mail input::placeholder {
+    color: grey;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-size: .8em;
+  }
+  .side-media {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #052C33;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    width: 100%;
+  }
+  .side-media form input {
+    background-color: #052C33;
+    border-bottom: 1px solid #FFFFFF !important;
+    border-style: none;
+    margin-top: 0;
+  }
+  .side-media form input::-webkit-input-placeholder {
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+  .side-media form input:-ms-input-placeholder {
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+  .side-media form input::-ms-input-placeholder {
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+  .side-media form input::placeholder {
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+  .side-media input {
+    width: 100%;
+  }
+  #paragraphe {
+    color: #FFFFFF;
+    display: none;
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 1.3rem;
+    margin-bottom: 2%;
+    text-align: inherit;
+    width: 75%;
+  }
+  #inscription {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 2% auto auto 2%;
+    width: 90%;
+  }
+  form#s-form.s-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px;
+    position: relative;
+    width: 207px;
+  }
+  #send {
+    background-color: #052C33;
+    border: #052C33;
+  }
+  .writeUs {
+    border: 0;
+    border-top: solid 0.3px #052C33;
+  }
+  .i-arrowright {
+    bottom: -.7em;
+    position: absolute;
+    right: -17vw;
+    width: 70px;
+  }
+  #i-insta {
+    height: 100%;
+    width: 18%;
+  }
+  .i-insta {
+    width: 40px;
+    position: relative;
+    margin-left: 22vw;
+    bottom: -.35em;
+  }
+  .insta img {
+    border-style: none;
+    vertical-align: middle;
+  }
+  #i-insta a {
+    display: block;
+    width: 90%;
+  }
 }
-
-
-.zonedroite
-{
-	display: none !important;
-}
-
-.footer
-{
-	text-align: center;
-}
-
-.flecheinputfooter
-{
-	text-align: center;
-}
-
-.iconesfooter1
-{
-	display: none !important;
-}
-
-.iconesfooter2
-{
-	display: block !important;
-	text-align: center;
-}
-
-.zoneemailfixe
-{
-	background-color: #052c33;
-}
-
-
-	}
+/*# sourceMappingURL=main.css.map */
