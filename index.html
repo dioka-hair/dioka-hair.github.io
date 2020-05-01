@@ -14,7 +14,7 @@
   <script>
     function dataSent() 
     {
-      alert("Vos informations en bien été envoyées !");
+      alert("Vos informations ont bien été envoyées !");
     }
   </script>
 
@@ -52,11 +52,11 @@
   function myFunction() {
     var arrow = document.getElementsByClassName("double-arrow")[0];
     if (
-      arrow.src === "https://img.icons8.com/ios/30/000000/double-up.png"
+      arrow.src === "https://img.icons8.com/ios/30/FFFFFF/double-up.png"
     ) {
-      arrow.src = "https://img.icons8.com/ios/24/000000/double-down.png";
+      arrow.src = "https://img.icons8.com/ios/30/FFFFFF/double-down.png"
     } else {
-      arrow.src = "https://img.icons8.com/ios/30/000000/double-up.png";
+      arrow.src = "https://img.icons8.com/ios/30/FFFFFF/double-up.png"
     }
  
     var x = document.getElementById("paragraphe");
@@ -111,7 +111,8 @@
           <img src="./landingpage/girlteam+logo_mobile.png" class="girlteam_logo_mobile" alt=""/>
         </div>            
         <div id="welcome-text" class="col-md-6 text-center">
-          <img src="./landingpage/logo dioka(R).svg" width="85%" alt=""/>
+          <!-- <img src="./landingpage/picture/logo-dioka.svg" width="85%" alt=""/> -->
+          <img src="./landingpage/logo dioka(R).svg" width="65%" alt=""/>
           <p class="phrasesousimgdioka">Une sélection exclusive<br /> de salons qualifiés pour cheveux<br /> crépus, frisés et bouclés !</p>
           <div id="scroll">
             <p class="scroll">Scroll</p>
@@ -263,12 +264,14 @@
     <div id="zonedroite" class="col-md-3 text-center zonedroite">
         <div class="texte-droite"> 
           <div class="restezconnecte">
-            Restons en contact !<br />
-            Reçois des conseils<br />
-            personnalisés : salons,<br />
-            soins, produits… Et suis<br />
-            le lancement de Dioka<br /><br />
-            (No spam promis)
+            Restons<br /> en contact !
+            <p>
+              Reçois des conseils<br />
+              personnalisés : salons,<br />
+              soins, produits… Et suis<br />
+              le lancement de Dioka
+            </p>            
+            <div>(No spam promis)</div>
           </div>
           <form id="form" onsubmit="dataSent()" target="hidden_iframe"
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
@@ -278,8 +281,8 @@
               <input class="flecheinputzonedroite" type='image' name="submit" src="landingpage/icone/arrow-right.svg" />
             </div>            
           </form>
-          <hr class="bottom-line">          
-          <div style="margin:3vw auto 0; padding-bottom: 10em;"> 
+          <hr class="bottom-line">        
+          <div style="margin:4.5vw auto 0; padding-bottom: 10em;"> 
             <a href="https://www.instagram.com/dioka_hair/" target="_blank" style="color:white;font-family: 'ITC Century Std';font-size: 1.5vw; line-height: 1em;">
               Instagram<br />
               @Dioka_hair<br />
@@ -287,7 +290,7 @@
             <a href="https://www.instagram.com/dioka_hair/" target="_blank">
               <img src="./landingpage/icone/instagram.svg" alt="logo instagram" width="25%" />
             </a>
-         </div>
+          </div>
         </div>
     </div>
     <!--END aside-->
@@ -334,17 +337,23 @@
                         </div>
                         <div class="col-md-5">
                             <div class="row-md" style="height: 1.5em;"></div>
-                            <div class="row iconesfooter1">
-                                <div class="col-md-5 offset-md-2">
+                            <div class="row iconesfooter1 align-items-center justify-content-around">
+                                <div class="col-md-2"> <!--offset-md-2-->
                                     <a href="mailto:contact@dioka.fr?Subject=Demande%20d'informations%20sur%20Dioka" target="_blank">
-                                        <img src="./landingpage/icone/envelope.svg" style="width:50px;"/> 
+                                      <img src="./landingpage/icone/envelope.svg" style="width:45px;" alt="icone enveloppe"/> 
                                     </a>
                                 </div>  
-                                <div class="col-md-5">
-                                    <a href="https://www.instagram.com/dioka_hair" target="_blank">
-                                        <img src="./landingpage/icone/instagramgreen.svg" style="width:50px;"/>
+                                <div class="col-md-2">
+                                    <a href="https://www.facebook.com/DIOKA-102168804789130/" target="_blank">
+                                      <img src="./landingpage/icone/icones-facebook.svg" style="width:31px;" alt="icone facebook"/>
                                     </a>
                                 </div>
+                                <div class="col-md-2" style="padding:0 !important">
+                                  <a href="https://www.instagram.com/dioka_hair" target="_blank">
+                                    <img src="./landingpage/icone/instagramgreen.svg" style="width:45px;" alt="icone instagram"/>
+                                  </a>
+                              </div>
+                              <!-- <div class="col-md-9"></div> -->
                             </div>
                         </div>
                 
@@ -353,7 +362,6 @@
                                 <a href="mailto:contact@dioka.fr?Subject=Demande%20d'informations%20sur%20Dioka" target="_blank">
                                     <img src="./landingpage/icone/envelope.svg" width="25%" />
                                 </a>
-                            
                                 <a href="https://www.instagram.com/dioka_hair" target="_blank">
                                     <img src="./landingpage/icone/instagramgreen.svg" width="25%" />
                                 </a>
@@ -371,7 +379,7 @@
         <img
           class="double-arrow"
           onClick="myFunction()"
-          src="https://img.icons8.com/ios/30/000000/double-up.png"
+          src="https://img.icons8.com/ios/30/FFFFFF/double-up.png"
           alt="flêche permet d'ouvrir ou de fermer une fenêtre d'information"
         />
         <div id="paragraphe">
@@ -399,7 +407,6 @@
               </a>
             </div>
           </form>
-        
         <!--<p id="tablet">instagram @Dioka_hair</p>-->
     </div>
     <!--END mobile form-->
