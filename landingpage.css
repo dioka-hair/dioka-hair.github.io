@@ -5,6 +5,16 @@ Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
+.center {
+  margin: auto;
+  float: none;
+  /* annule le float:left de bootstrap*/
+}
+
+* :focus {
+  outline: none;
+}
+
 .container-fluid {
   padding: 0 !important;
 }
@@ -122,14 +132,14 @@ body {
   color: #052C33 !important;
   width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .header {
   background-color: #FFF0F0;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
@@ -169,29 +179,29 @@ body {
 }
 
 #welcome-text {
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 .phrasesousimgdioka {
   font-family: "ITC Century Std";
-  font-size: 1.4em;
-  line-height: 1.384em;
-  margin-top: -1.5em;
+  font-size: 1.5vw;
+  line-height: 1.3em;
+  margin-top: 1.5em;
 }
 
 #scroll {
-  margin-top: 27%;
+  margin-top: 30%;
   margin-bottom: 1em !important;
 }
 
 .scroll {
   font-family: "ITC Century Std";
-  font-size: 1em;
+  font-size: 1vw;
 }
 
 #fleche {
   -webkit-animation: bounce 1.4s infinite;
-          animation: bounce 1.4s infinite;
+  animation: bounce 1.4s infinite;
   height: 1em;
 }
 
@@ -199,15 +209,15 @@ body {
   0%, 20%, 50%, 80%,
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   40% {
     -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   60% {
     -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 }
 
@@ -215,15 +225,15 @@ body {
   0%, 20%, 50%, 80%,
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   40% {
     -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   60% {
     -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 }
 
@@ -242,8 +252,8 @@ body {
   border-top: solid 0.3px #052C33;
   border-bottom: solid 0.3px #052C33;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .titresgirlhair {
@@ -312,7 +322,7 @@ body {
 
 #sisters-img img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -345,7 +355,7 @@ body {
 
 .dabaetseynabou {
   font-family: "ITC Century Std";
-  font-size: 1.5vw;
+  font-size: 1vw;
   margin-top: 1vw;
 }
 
@@ -365,12 +375,12 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #zonedroite {
@@ -385,7 +395,7 @@ body {
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
-  top: 25%;
+  top: 20%;
   z-index: 1;
 }
 
@@ -402,7 +412,19 @@ body {
   font-family: "Neue Haas Grotesk Display Pro";
   font-size: 2vw;
   line-height: 1em;
-  margin: 6em 1vw 1em;
+  margin: 6em 3vw 0;
+}
+
+.restezconnecte p {
+  padding: 1em 0;
+  font-size: 1vw;
+  line-height: 1.2vw;
+  margin-bottom: 0;
+}
+
+.restezconnecte div {
+  font-family: "ITC Century Std";
+  font-size: 0.6vw;
 }
 
 .input-box {
@@ -411,11 +433,11 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-left: 3vw;
   margin-right: 3vw;
 }
@@ -439,7 +461,7 @@ body {
   width: 75%;
   border-bottom: 0.5px solid #FFFFFF;
   -webkit-transform: translateY(-1vw);
-          transform: translateY(-1vw);
+  transform: translateY(-1vw);
 }
 
 .instaBanner {
@@ -456,11 +478,11 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   max-width: 100%;
   padding-bottom: 6em;
 }
@@ -468,13 +490,13 @@ body {
 .square-picture .insta-last-img {
   overflow: hidden;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .square-picture > div {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 25%;
-          flex: 0 1 25%;
+  -ms-flex: 0 1 25%;
+  flex: 0 1 25%;
 }
 
 .footer-titre {
@@ -493,10 +515,10 @@ body {
   color: #000000 !important;
 }
 
+
 .emailfooter {
   border: none;
   border-bottom: 0.3px solid #052C33;
-  padding-bottom: 5%;
   width: 23vw;
 }
 
@@ -547,7 +569,12 @@ body {
   }
   #welcome-text {
     margin-bottom: 2em;
-    margin-top: -1.5em;
+    /* margin-top: -1.5em; */
+  }
+  .phrasesousimgdioka {
+    font-family: "ITC Century Std";
+    font-size: 1.2em;
+    line-height: 1.3em;
   }
   #scroll {
     display: none;
@@ -602,7 +629,7 @@ body {
   #sisters-img img {
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     width: 100%;
   }
   #presentationdioka {
@@ -618,15 +645,13 @@ body {
     font-size: 1.2em;
     line-height: 1.25em;
     margin: auto 2em p;
-    margin-margin: 0 auto;
-    margin-padding: 0 auto;
   }
   .textepresentationdioka p:nth-child(1) {
     padding-bottom: 1em;
   }
   .dabaetseynabou {
     font-family: "ITC Century Std";
-    font-size: 1.5em;
+    font-size: 1em;
     margin-top: 1em;
   }
   .zonedroite {
@@ -646,6 +671,7 @@ body {
   }
   .iconesfooter2 {
     display: block !important;
+    margin-bottom: .7em;
     text-align: center;
   }
   .zoneemailfixe {
@@ -659,8 +685,8 @@ body {
   }
   .square-picture > div {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 80%;
-            flex: 0 1 80%;
+    -ms-flex: 0 1 80%;
+    flex: 0 1 80%;
     padding: 20px;
   }
   .suiveznoussur {
@@ -678,6 +704,11 @@ body {
   .footer form input {
     margin-bottom: 5em;
   }
+
+.emailfooter::placeholder {
+  padding-top: 5%;
+}
+
   .emailfooter {
     padding-bottom: 5%;
     width: 80%;
@@ -706,12 +737,13 @@ body {
   }
   .double-arrow {
     color: #FFFFFF;
+    margin-bottom: 1rem;
     margin-top: 1rem;
-    width: 3%;
+    width: 4%;
   }
   .double-arrow:hover {
     -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
   }
   .s-mail input {
     background-image: url(./icone/arrow-right.svg);
@@ -754,8 +786,8 @@ body {
   }
   .side-media {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     background-color: #052C33;
     bottom: 0;
     display: -webkit-box;
@@ -763,11 +795,11 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     position: fixed;
     width: 100%;
   }
@@ -776,6 +808,7 @@ body {
     border-bottom: 1px solid #FFFFFF !important;
     border-style: none;
     margin-top: 0;
+    color: #FFFFFF;
   }
   .side-media form input::-webkit-input-placeholder {
     color: #FFFFFF;
@@ -807,14 +840,14 @@ body {
   }
   #inscription {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-bottom: 2% auto auto 2%;
     width: 90%;
   }
@@ -824,7 +857,7 @@ body {
     display: flex;
     height: 50px;
     position: relative;
-    width: 207px;
+    width: 70vw;
   }
   #send {
     background-color: #052C33;
@@ -835,9 +868,9 @@ body {
     border-top: solid 0.3px #052C33;
   }
   .i-arrowright {
-    bottom: -.7em;
+    bottom: -.9em;
     position: absolute;
-    right: -17vw;
+    right: -2em;
     width: 70px;
   }
   #i-insta {
@@ -845,10 +878,9 @@ body {
     width: 18%;
   }
   .i-insta {
+    margin-bottom: -2em;
+    margin-left: 4em;
     width: 40px;
-    position: relative;
-    margin-left: 22vw;
-    bottom: -.35em;
   }
   .insta img {
     border-style: none;
@@ -859,4 +891,4 @@ body {
     width: 90%;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=landingpage.css.map */
