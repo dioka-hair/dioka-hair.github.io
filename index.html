@@ -273,14 +273,37 @@
             </p>            
             <div>(No spam promis)</div>
           </div>
-          <form id="form" onsubmit="return postToGoogle();" action="" target="hidden_iframe"
-          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
+          <form id="form" onsubmit="return postToGoogle1()" target="hidden_iframe"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSfEiJtU4nNKmhRS-zvOuBWm8dhRjMVhGzWqyY-X9sy2AUKFeg/formResponse"
           autocomplete="off" class="form">
             <div class="input-box">
-              <input type="email" class="emailzonedroite" placeholder="Mon e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
-              <input class="flecheinputzonedroite" type='submit' name="submit" src="landingpage/icone/arrow-right.svg" />
+              <input id="s-mail1" name="entry.813397265" type="email" class="emailzonedroite" placeholder="Mon e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
+
+              <input class="flecheinputzonedroite" type="image" src="landingpage/icone/arrow-right.svg" />
             </div>            
           </form>
+
+          <script>
+            function postToGoogle1() {
+                            var email = $("#s-mail1").val();
+                     $.ajax({
+                                url: "https://docs.google.com/forms/d/e/1FAIpQLSfEiJtU4nNKmhRS-zvOuBWm8dhRjMVhGzWqyY-X9sy2AUKFeg/formResponse?",
+                      data: {"entry.813397265": email},
+                                type: "POST",
+                                dataType: "xml",
+                                success: function(d)
+                      {
+                      },
+                      error: function(x, y, z)
+                        {
+                          alert("Votre email a bien été enregistré !")              
+                        }
+                            });
+                    return false;
+                        }
+            </script>
+
+
           <hr class="bottom-line">        
           <div style="margin:4.5vw auto 0; padding-bottom: 10em;"> 
             <a href="https://www.instagram.com/dioka_hair/" target="_blank" style="color:white;font-family: 'ITC Century Std';font-size: 1.5vw; line-height: 1em;">
@@ -307,12 +330,34 @@
                     Newsletter
                     </p>
                     <br /><br />
-                    <form id="form input-box" onsubmit="dataSent()" target="hidden_iframe"
-                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
+                    <form id="form input-box" onsubmit="return postToGoogle2()" target="hidden_iframe"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSfEiJtU4nNKmhRS-zvOuBWm8dhRjMVhGzWqyY-X9sy2AUKFeg/formResponse"
                     autocomplete="off" class="form">
-                        <input type="email" class="emailfooter" placeholder="Mon e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
-                        <input class="flecheinputfooter" type='image' name="submit" src="landingpage/icone/arrow-right-green.svg" />
+                        <input id="s-mail2" name="entry.813397265" type="email" class="emailfooter" placeholder="Mon e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
+                        <input class="flecheinputfooter" type='image' src="landingpage/icone/arrow-right-green.svg" />
                     </form>
+
+                    <script>
+                    function postToGoogle2() {
+                                    var email = $("#s-mail2").val();
+                             $.ajax({
+                                        url: "https://docs.google.com/forms/d/e/1FAIpQLSfEiJtU4nNKmhRS-zvOuBWm8dhRjMVhGzWqyY-X9sy2AUKFeg/formResponse?",
+                              data: {"entry.813397265": email},
+                                        type: "POST",
+                                        dataType: "xml",
+                                        success: function(d)
+                              {
+                              },
+                              error: function(x, y, z)
+                                {
+                                  alert("Votre email a bien été enregistré !")              
+                                }
+                                    });
+                            return false;
+                                }
+                    </script>
+
+
                 </div>
             </div>
         </div>
@@ -389,8 +434,8 @@
           Restez connecté.e.s avec Dioka et suivez le lancement !
         </div>
         <div id="inscription">
-          <form id="s-form" onsubmit="" target="hidden_iframe"
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
+          <form id="s-form" onsubmit="return postToGoogle3();" target="hidden_iframe"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSfEiJtU4nNKmhRS-zvOuBWm8dhRjMVhGzWqyY-X9sy2AUKFeg/formResponse"
             autocomplete="off" class="s-form input-box">
             <button id="send" type="submit">
                 <img
@@ -399,7 +444,7 @@
                 alt="bouton d'envoi de votre e.mail"
                 />
             </button>
-            <input id="s-mail" type="email" name="entry.190645927" placeholder="Mon e-mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" style="outline: 0;" required/>
+            <input id="s-mail3" type="email" name="entry.813397265" placeholder="Mon e-mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" style="outline: 0;" required/>
             <div id="i-insta">
               <a href="https://www.instagram.com/dioka_hair/">
                   <img
@@ -410,62 +455,32 @@
               </a>
             </div>
           </form>
-        <!--<p id="tablet">instagram @Dioka_hair</p>-->
+
+          <script>
+                    function postToGoogle3() {
+                                    var email = $("#s-mail3").val();
+                             $.ajax({
+                                        url: "https://docs.google.com/forms/d/e/1FAIpQLSfEiJtU4nNKmhRS-zvOuBWm8dhRjMVhGzWqyY-X9sy2AUKFeg/formResponse?",
+                              data: {"entry.813397265": email},
+                                        type: "POST",
+                                        dataType: "xml",
+                                        success: function(d)
+                              {
+                              },
+                              error: function(x, y, z)
+                                {
+                                  alert("Votre email a bien été enregistré !")              
+                                }
+                                    });
+                            return false;
+                                }
+                    </script>
+
+
     </div>
     <!--END mobile form-->
     </div>
 
-
-    <!--
-    <div class="row zoneemailfixe text-center">
-      <div class="col-sm-12">
-        <br /><br /><br />
-      <form id="form" onsubmit="dataSent()" target="hidden_iframe"
-          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
-          autocomplete="off" class="form">
-            <input type="email" class="emailzonedroite" placeholder="Mon e-mail" style=""/>
-            <br />
-            <input class="" type='image' name="submit" src="landingpage/icone/arrow-right.svg" />
-          </form>
-        </div>
-    </div>-->
-
-      <!--
-      <form width="100%" id="form" onsubmit="dataSent()" target="hidden_iframe"
-          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
-          autocomplete="off" class="form">
-        <input type="email" class="emailzonedroite" placeholder="Mon e-mail" style=""/>
-        <br />
-        <input class="flecheinputzonedroite" type='image' name="submit" src="landingpage/icone/arrow-right.svg" />
-      </form>-->
-
-<script>
-function postToGoogle() {
-                var email = $("#s-mail").val();
-        
-        if(email == ""){
-          alert("Merci d'indiquer votre email");
-          document.getElementById("nameField").focus();
-          return false;
-        }           $.ajax({
-                    url: "https://docs.google.com/forms/d/e/1FAIpQLScCfsE3b0J3lQVPyQ7j78VHFzR_665QKHUCWeBaXLmmepJ2cQ/formResponse?",
-          data: {"entry.190645927": email},
-                    type: "POST",
-                    dataType: "xml",
-                    success: function(d)
-          {
-          },
-          error: function(x, y, z)
-            {
-              alert("Votre email a bien été enregistré !")
-              //$('#success-msg').show();
-              /*$('#form').hide();*/
-              
-            }
-                });
-        return false;
-            }
-</script>
 
 
 </body>
