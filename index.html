@@ -273,12 +273,12 @@
             </p>            
             <div>(No spam promis)</div>
           </div>
-          <form id="form" onsubmit="dataSent()" target="hidden_iframe"
+          <form id="form" onsubmit="return postToGoogle();" action="" target="hidden_iframe"
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
           autocomplete="off" class="form">
             <div class="input-box">
               <input type="email" class="emailzonedroite" placeholder="Mon e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
-              <input class="flecheinputzonedroite" type='image' name="submit" src="landingpage/icone/arrow-right.svg" />
+              <input class="flecheinputzonedroite" type='submit' name="submit" src="landingpage/icone/arrow-right.svg" />
             </div>            
           </form>
           <hr class="bottom-line">        
@@ -362,6 +362,9 @@
                                 <a href="mailto:contact@dioka.fr?Subject=Demande%20d'informations%20sur%20Dioka" target="_blank">
                                     <img src="./landingpage/icone/envelope.svg" width="25%" />
                                 </a>
+                                <a href="https://www.facebook.com/DIOKA-102168804789130/" target="_blank">
+                                    <img src="./landingpage/icone/icones-facebook.svg" width="18%" />
+                                </a>
                                 <a href="https://www.instagram.com/dioka_hair" target="_blank">
                                     <img src="./landingpage/icone/instagramgreen.svg" width="25%" />
                                 </a>
@@ -386,7 +389,7 @@
           Restez connecté.e.s avec Dioka et suivez le lancement !
         </div>
         <div id="inscription">
-          <form id="s-form" onsubmit="dataSent()" target="hidden_iframe"
+          <form id="s-form" onsubmit="" target="hidden_iframe"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeacRVebg54pbeeDF1l9ShHYGdjRGg-FxTWEPSr-3WBmNLRYw/formResponse"
             autocomplete="off" class="s-form input-box">
             <button id="send" type="submit">
@@ -396,7 +399,7 @@
                 alt="bouton d'envoi de votre e.mail"
                 />
             </button>
-            <input id="s-mail" type="email" name="entry.27418147" placeholder="Mon e-mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" style="outline: 0;" required/>
+            <input id="s-mail" type="email" name="entry.190645927" placeholder="Mon e-mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" style="outline: 0;" required/>
             <div id="i-insta">
               <a href="https://www.instagram.com/dioka_hair/">
                   <img
@@ -435,6 +438,35 @@
         <br />
         <input class="flecheinputzonedroite" type='image' name="submit" src="landingpage/icone/arrow-right.svg" />
       </form>-->
+
+<script>
+function postToGoogle() {
+                var email = $("#s-mail").val();
+        
+        if(email == ""){
+          alert("Merci d'indiquer votre email");
+          document.getElementById("nameField").focus();
+          return false;
+        }           $.ajax({
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLScCfsE3b0J3lQVPyQ7j78VHFzR_665QKHUCWeBaXLmmepJ2cQ/formResponse?",
+          data: {"entry.190645927": email},
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+          {
+          },
+          error: function(x, y, z)
+            {
+              alert("Votre email a bien été enregistré !")
+              //$('#success-msg').show();
+              /*$('#form').hide();*/
+              
+            }
+                });
+        return false;
+            }
+</script>
+
 
 </body>
 </html>
