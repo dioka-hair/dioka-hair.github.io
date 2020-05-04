@@ -868,10 +868,10 @@ body {
     border-top: solid 0.3px #052C33;
   }
   .i-arrowright {
-    bottom: -.9em;
+    bottom: -2em;
     position: absolute;
-    right: -2em;
-    width: 70px;
+    right: -5em;
+    width: 110px;
   }
   #i-insta {
     height: 100%;
